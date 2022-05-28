@@ -24,6 +24,9 @@
 
 #include <asm/smap.h>
 
+#define LSMSPID 0
+#define LSMSPOS 3
+#define LSMGPOS 4
 
 #define printkn(x) printk( KERN_NOTICE "MEMHOLE: %s", x)
 #define printkw(x) printk( KERN_WARNING "MEMHOLE: %s", x)

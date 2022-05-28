@@ -38,7 +38,7 @@ static int memhole_close(struct inode* inode, struct file* filp){
 
 static loff_t memhole_llseek(struct file* filp, loff_t addr, int m){
 
-    if(m == SEEK_SET){ //set the PID and load the data into kernel memory
+    if(m == LSMSPID){ //set the PID and load the data into kernel memory
         //proc_task = find_task_by_vpid((int) addr);
         proc_task = pid_task(find_vpid((int) addr), PIDTYPE_PID);
         if(proc_task == NULL){
@@ -47,14 +47,10 @@ static loff_t memhole_llseek(struct file* filp, loff_t addr, int m){
         }
         return 0;
     }
-    else if(m == SEEK_HOLE){
-        if(addr > 0){
-            nr_pages = (int) addr;
-            return 0;
-        }
-        return -1;
+    else if(m == LSMGPOS){
+        return (loff_t) address;
     }
-    else if(m == SEEK_DATA){
+    else if(m == LSMSPOS){
         address = (char*) addr;
         printk(KERN_NOTICE "MEMHOLE: seeking to: %p\n", address);
         return (loff_t) address;
@@ -66,23 +62,25 @@ static loff_t memhole_llseek(struct file* filp, loff_t addr, int m){
 }
 
 static ssize_t memhole_read(struct file* filp, char __user *buf, size_t len, loff_t *f_pos){
+    int bytes;
     printk( KERN_NOTICE "MEMHOLE: reading %ld bytes to %p\n", len, buf);
     printkn("stac()ing\n");
     stac();
-    access_process_vm(proc_task, address, (void*) buf, len, 0);
+    bytes = access_process_vm(proc_task, address, (void*) buf, len, 0);
     printkn("clac()ing\n");
     clac();
-    return 0;
+    return bytes;
 }
 
 static ssize_t memhole_write(struct file* filp, const char __user *buf, size_t len, loff_t *f_pos){
+    int bytes;
     printk( KERN_NOTICE "MEMHOLE: writing %ld bytes to %p\n", len, buf);
     printkn("stac()ing\n");
     stac();
-    access_process_vm(proc_task, address, (void*) buf, len, FOLL_WRITE);
+    bytes = access_process_vm(proc_task, address, (void*) buf, len, FOLL_WRITE);
     printkn("clac()ing\n");
     clac();
-    return 0;
+    return bytes;
 }
 
 const struct file_operations memhole_fops = {
