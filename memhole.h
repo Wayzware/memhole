@@ -14,12 +14,17 @@
 #include <linux/seq_file.h>
 #include <linux/cdev.h>
 
+#include <linux/pagemap.h>
+#include <linux/mm.h>
+
 #include <linux/uaccess.h>	/* copy_*_user */
 #include <linux/sched/signal.h>
 
 #include <linux/types.h>	/* size_t */
 
+#include <asm/smap.h>
 
-#define printkn(x) printk( KERN_NOTICE " MEMHOLE: %s", x)
-#define printkw(x) printk( KERN_WARNING " MEMHOLE: %s", x)
-#define printke(x) printk( KERN_EMERG " MEMHOLE: %s", x)
+
+#define printkn(x) printk( KERN_NOTICE "MEMHOLE: %s", x)
+#define printkw(x) printk( KERN_WARNING "MEMHOLE: %s", x)
+#define printke(x) printk( KERN_EMERG "MEMHOLE: %s", x)

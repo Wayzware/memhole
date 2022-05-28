@@ -11,13 +11,15 @@
 
 int main(){
 
-    int *x = malloc(sizeof(int));
-    int num = 6;
+    int *x = 0x55e703fa72a0;
+    int num = 666666;
 
-    int fd = open("/dev/memhole", O_WRONLY);
-    lseek64(fd, x, 0);
-    int res = write(fd, (char*) &num, sizeof(int));
-    printf("%d|%d|%d\n", fd, *x, res);
-    close(fd);
+    int fd = open("/dev/memhole", O_WRONLY); //open the device
+    lseek64(fd, x, 0); //"seek" the device to int* x
+
+    int res = write(fd, (char*) &num, sizeof(int)); //write num to the memory address stored on the device (currently x)
+
+    //printf("%d|%d|%d\n", fd, *x, res); //print the fd, the value of x (should be changed thru the write call), and the ret value of write (0 on success)
+    close(fd); //close the device
     return 0;
 }
