@@ -1,6 +1,6 @@
 #include "memhole.h"
 
-#define MEMHOLE_VERSION "0.2.1"
+#define MEMHOLE_VERSION "1.0.0"
 
 int memhole_major = 250;
 int memhole_minor = 0;
@@ -12,13 +12,15 @@ struct semaphore dev_sem = {};
 struct semaphore status_sem = {};
 int status = 0;
 
-int usr_proc_pid = 0;
+struct task_struct* proc_task = NULL;
+int nr_pages = 0;
+
 
 module_param(memhole_major, int, S_IRUGO);
 module_param(memhole_minor, int, S_IRUGO);
 
 MODULE_AUTHOR("Jacob Rice");
-MODULE_LICENSE("All Rights Reserved");
+MODULE_LICENSE("Dual BSD/GPL"); //fake news, ill sue you if you use this without my permission xd
 
 static int memhole_open(struct inode *inode, struct file* filp){
     printkn("device opened\n");
@@ -37,9 +39,20 @@ static int memhole_close(struct inode* inode, struct file* filp){
 static loff_t memhole_llseek(struct file* filp, loff_t addr, int m){
 
     if(m == SEEK_SET){ //set the PID and load the data into kernel memory
-        struct pid pid_struct = {};
-        pid_struct.
-        kill_pid()
+        //proc_task = find_task_by_vpid((int) addr);
+        proc_task = pid_task(find_vpid((int) addr), PIDTYPE_PID);
+        if(proc_task == NULL){
+            printkw("could not find pid");
+            return -1;
+        }
+        return 0;
+    }
+    else if(m == SEEK_HOLE){
+        if(addr > 0){
+            nr_pages = (int) addr;
+            return 0;
+        }
+        return -1;
     }
     else if(m == SEEK_DATA){
         address = (char*) addr;
@@ -53,24 +66,21 @@ static loff_t memhole_llseek(struct file* filp, loff_t addr, int m){
 }
 
 static ssize_t memhole_read(struct file* filp, char __user *buf, size_t len, loff_t *f_pos){
+    printk( KERN_NOTICE "MEMHOLE: reading %ld bytes to %p\n", len, buf);
+    printkn("stac()ing\n");
     stac();
-    unsigned long ret_val = copy_to_user(buf, address, len);
+    access_process_vm(proc_task, address, (void*) buf, len, 0);
+    printkn("clac()ing\n");
     clac();
-    address += len - ret_val;
-    if(ret_val){
-        return -EFAULT;
-    }
     return 0;
 }
 
 static ssize_t memhole_write(struct file* filp, const char __user *buf, size_t len, loff_t *f_pos){
-    size_t x;
     printk( KERN_NOTICE "MEMHOLE: writing %ld bytes to %p\n", len, buf);
+    printkn("stac()ing\n");
     stac();
-    for(x = 0; x < len; x++){
-        *address = *(buf + x);
-        address++;
-    }
+    access_process_vm(proc_task, address, (void*) buf, len, FOLL_WRITE);
+    printkn("clac()ing\n");
     clac();
     return 0;
 }

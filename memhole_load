@@ -21,7 +21,7 @@ major=$(awk "\$2==\"$module\" {print \$1}" /proc/devices)
 # Remove stale nodes and replace them, then give gid and perms
 # Usually the script is shorter, it's scull that has several devices in it.
 
-
+/sbin/insmod ./memhhole.ko || exit 1
 sudo rm -f /dev/memhole
 sudo mknod /dev/memhole c 506 0
 sudo chgrp staff /dev/memhole

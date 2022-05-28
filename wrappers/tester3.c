@@ -9,17 +9,19 @@
 #include <unistd.h>
 
 int main(int argc, char **argv){
+    int i;
 
-    if(argc != 4){
+    if(argc != 3){
         printf("You forgor the arguments dumbass\n");
         return 0;
     }
 
     int *x = (int *) strtol(argv[1], NULL, 16);
     int pid = atoi(argv[2]);
-    int num = atoi(argv[3]);
+    
+    FILE *file = fopen("log.txt", "w+");
 
-    int fd = open("/dev/memhole", O_WRONLY); //open the device
+    int fd = open("/dev/memhole", O_RDONLY); //open the device
     if(lseek64(fd, pid, 0)){
         printf("uh oh");
         return 0;
@@ -28,9 +30,18 @@ int main(int argc, char **argv){
         printf("uh oh 2");
         return 0;
     }
-    int res = write(fd, (char*) &num, sizeof(int)); //write num to the memory address stored on the device (currently x)
 
-    //printf("%d|%d|%d\n", fd, *x, res); //print the fd, the value of x (should be changed thru the write call), and the ret value of write (0 on success)
+    int buf[16384] = {};
+
+    
+    int res = read(fd, (char*) buf, sizeof(int)*16384); //write num to the memory address stored on the device (currently x)
+
+    for (i = 0; i < 16384; i++) {
+        fprintf(file, "%d\n", buf[i]);
+    }
+
     close(fd); //close the device
+
+    fclose(file);
     return 0;
 }
