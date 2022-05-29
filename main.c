@@ -43,9 +43,9 @@ static loff_t memhole_llseek(struct file* filp, loff_t addr, int m){
         proc_task = pid_task(find_vpid((int) addr), PIDTYPE_PID);
         if(proc_task == NULL){
             printkw("could not find pid");
-            return -1;
+            return 0;
         }
-        return 0;
+        return proc_task->mm->start_brk;
     }
     else if(m == LSMGPOS){
         return (loff_t) address;

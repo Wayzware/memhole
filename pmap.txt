@@ -1,0 +1,1613 @@
+6085:   /home/wayz/.local/share/Steam/steamapps/common/Counter-Strike Global Offensive/csgo_linux64 -steam
+0000000000400000      4K r-x-- csgo_linux64
+0000000000600000      4K r---- csgo_linux64
+0000000000601000      4K rw--- csgo_linux64
+0000000001f9e000 1025120K rw---   [ anon ]
+0000000040949000    700K rw---   [ anon ]
+0000000041e46000      8K r-xs- .glXXXXXX (deleted)
+0000001481700000    512K rw---   [ anon ]
+0000003307f80000    512K -----   [ anon ]
+000000b2b9b00000    512K rw---   [ anon ]
+000000edda300000    512K rw---   [ anon ]
+000002657b280000    512K -----   [ anon ]
+0000034dccb00000    512K -----   [ anon ]
+000003be7ce00000    512K rw---   [ anon ]
+0000042c6ef00000    512K rw---   [ anon ]
+000004841c200000    512K rw---   [ anon ]
+000004ac68d80000    512K -----   [ anon ]
+000005907a300000    512K rw---   [ anon ]
+0000075499e00000    512K rw---   [ anon ]
+000007b7ea200000    512K rw---   [ anon ]
+0000092749a80000    512K rw---   [ anon ]
+00000927cb200000    512K rw---   [ anon ]
+00000a3b2d080000    512K -----   [ anon ]
+00000b15d6680000    512K rw---   [ anon ]
+00000b85ad180000     20K rw---   [ anon ]
+00000b85ad185000    492K -----   [ anon ]
+00000bbe13500000    512K rw---   [ anon ]
+00000c3452d80000    512K -----   [ anon ]
+00000da473380000    512K rw---   [ anon ]
+00000de704a80000    512K rw---   [ anon ]
+00000deca6300000    512K -----   [ anon ]
+00000e2e6bd00000    512K rw---   [ anon ]
+000010d4f8500000    512K rw---   [ anon ]
+000011d11ac00000    512K rw---   [ anon ]
+00001292d5680000    512K rw---   [ anon ]
+000014cd6ba00000    512K rw---   [ anon ]
+000014f48d680000    512K rw---   [ anon ]
+0000150b37f80000    512K rw---   [ anon ]
+000015a259d00000    512K rw---   [ anon ]
+000016be6c700000    512K -----   [ anon ]
+0000177866c00000    512K rw---   [ anon ]
+00001866f7f80000    512K rw---   [ anon ]
+000018e99b900000    512K rw---   [ anon ]
+0000198cf7000000    512K -----   [ anon ]
+000019f8d6100000    376K rw---   [ anon ]
+000019f8d615e000    136K -----   [ anon ]
+00001a1b19080000    512K -----   [ anon ]
+00001aa90f180000    512K rw---   [ anon ]
+00001b680e000000    512K rw---   [ anon ]
+0000206235f00000    512K rw---   [ anon ]
+000020b8a3100000    512K rw---   [ anon ]
+000020fa21580000    512K rw---   [ anon ]
+000021b08b400000    512K rw---   [ anon ]
+000021b80af00000    512K -----   [ anon ]
+000021e01ab80000    512K rw---   [ anon ]
+000025a089a04000   4096K -----   [ anon ]
+000025c376d00000    512K -----   [ anon ]
+000025e01c380000    512K rw---   [ anon ]
+0000266a3aa80000    512K rw---   [ anon ]
+000027ab569b0000    320K -----   [ anon ]
+000027ab56a00000     12K rw---   [ anon ]
+000027ab56a03000      4K -----   [ anon ]
+000027ab56a04000      4K rwx--   [ anon ]
+000027ab56a05000    492K -----   [ anon ]
+000027ab56a80000     12K rw---   [ anon ]
+000027ab56a83000      4K -----   [ anon ]
+000027ab56a84000      4K rwx--   [ anon ]
+000027ab56a85000    492K -----   [ anon ]
+000027ab56b00000     12K rw---   [ anon ]
+000027ab56b03000      4K -----   [ anon ]
+000027ab56b04000      4K rwx--   [ anon ]
+000027ab56b05000    492K -----   [ anon ]
+000027ab56b80000     12K rw---   [ anon ]
+000027ab56b83000      4K -----   [ anon ]
+000027ab56b84000    492K rwx--   [ anon ]
+000027ab56bff000      4K -----   [ anon ]
+000027ab56c00000     12K rw---   [ anon ]
+000027ab56c03000      4K -----   [ anon ]
+000027ab56c04000    492K rwx--   [ anon ]
+000027ab56c7f000      4K -----   [ anon ]
+000027ab56c80000     12K rw---   [ anon ]
+000027ab56c83000      4K -----   [ anon ]
+000027ab56c84000     92K rwx--   [ anon ]
+000027ab56c9b000    404K -----   [ anon ]
+000027ab56d00000     12K rw---   [ anon ]
+000027ab56d03000      4K -----   [ anon ]
+000027ab56d04000    492K rwx--   [ anon ]
+000027ab56d7f000      4K -----   [ anon ]
+000027ab56d80000     12K rw---   [ anon ]
+000027ab56d83000      4K -----   [ anon ]
+000027ab56d84000    492K rwx--   [ anon ]
+000027ab56dff000 519876K -----   [ anon ]
+000028582db80000    512K -----   [ anon ]
+0000299206580000    512K rw---   [ anon ]
+00002a1a93a00000    512K -----   [ anon ]
+00002a27e9b00000    512K rw---   [ anon ]
+00002a3e82000000    512K -----   [ anon ]
+00002aae33480000    512K rw---   [ anon ]
+00002c242d000000    512K rw---   [ anon ]
+00002c67d2000000    512K rw---   [ anon ]
+00002ceac4280000    512K -----   [ anon ]
+00002d7b1a580000    512K -----   [ anon ]
+00002d8f3b480000    512K rw---   [ anon ]
+00002e1d2c280000    512K -----   [ anon ]
+00002e76e0f80000    512K rw---   [ anon ]
+00002f64ca200000    512K rw---   [ anon ]
+000031abcce80000    512K -----   [ anon ]
+0000327420000000    512K rw---   [ anon ]
+0000333648480000    512K rw---   [ anon ]
+0000341912400000    512K rw---   [ anon ]
+000034ffba000000    512K rw---   [ anon ]
+00003556387a9000     12K -----   [ anon ]
+00003556387ac000     32K rw---   [ anon ]
+00003556387b4000      4K -----   [ anon ]
+000035bef1d80000    512K rw---   [ anon ]
+000035cadb400000    512K rw---   [ anon ]
+000037f2cf400000    512K rw---   [ anon ]
+00003b99e8c00000    512K -----   [ anon ]
+00003b9d49400000    512K -----   [ anon ]
+00003bb6b2a80000    512K rw---   [ anon ]
+00003c595f080000    512K rw---   [ anon ]
+00003cf3c0480000    512K -----   [ anon ]
+00003d0274400000    512K rw---   [ anon ]
+00003ee9ec580000    512K rw---   [ anon ]
+00003f289aa00000    512K rw---   [ anon ]
+00003fc2cac00000    512K rw---   [ anon ]
+00007f76890f5000   4096K rw-s- nvidiactl
+00007f76894f5000  20444K r---- NotoSansCJK-Bold.ttc
+00007f768a8ec000      4K -----   [ anon ]
+00007f768a8ed000   1024K rw---   [ anon ]
+00007f768a9ed000  20444K r---- NotoSansCJK-Bold.ttc
+00007f768bde4000   4096K rw-s- nvidiactl
+00007f768c1e4000   4096K rw-s- nvidiactl
+00007f768c5e4000   2048K rw-s- nvidiactl
+00007f768c7e4000   4096K rw-s- nvidiactl
+00007f768cbe4000  83952K rw---   [ anon ]
+00007f7691de1000  20444K r---- NotoSansCJK-Bold.ttc
+00007f76931d8000   2048K rw-s- nvidiactl
+00007f76933d8000   2048K rw-s- nvidiactl
+00007f76936d7000      4K -----   [ anon ]
+00007f76936d8000   1024K rw---   [ anon ]
+00007f76937d8000   2048K rw-s- nvidiactl
+00007f76939d8000   3416K rw---   [ anon ]
+00007f7693d2e000   1024K rw-s- nvidiactl
+00007f7693e2e000   2048K rw---   [ anon ]
+00007f769402e000  20444K r---- NotoSansCJK-Bold.ttc
+00007f7695425000      4K -----   [ anon ]
+00007f7695426000  13696K rw---   [ anon ]
+00007f7696187000      4K -----   [ anon ]
+00007f7696188000  53184K rw---   [ anon ]
+00007f7699578000   4096K rw-s- nvidiactl
+00007f7699978000  66592K rw---   [ anon ]
+00007f769da81000  20444K r---- NotoSansCJK-Bold.ttc
+00007f769ee78000   4096K rw-s- nvidiactl
+00007f769f2f8000  41776K rw---   [ anon ]
+00007f76a1bc5000      4K -----   [ anon ]
+00007f76a1bc6000 247880K rw---   [ anon ]
+00007f76b0dd9000      4K -----   [ anon ]
+00007f76b0dda000  36512K rw---   [ anon ]
+00007f76b3183000      4K -----   [ anon ]
+00007f76b3184000   1024K rw---   [ anon ]
+00007f76b3284000      4K -----   [ anon ]
+00007f76b3285000   1024K rw---   [ anon ]
+00007f76b3385000      4K -----   [ anon ]
+00007f76b3386000   2048K rw---   [ anon ]
+00007f76b3586000      4K -----   [ anon ]
+00007f76b3587000   1024K rw---   [ anon ]
+00007f76b3687000      4K -----   [ anon ]
+00007f76b3688000   3072K rw---   [ anon ]
+00007f76b3989000      4K -----   [ anon ]
+00007f76b398a000   2048K rw---   [ anon ]
+00007f76b3b8a000      4K -----   [ anon ]
+00007f76b3b8b000   1024K rw---   [ anon ]
+00007f76b3c8b000      4K -----   [ anon ]
+00007f76b3c8c000 1687256K rw---   [ anon ]
+00007f771ae42000   2048K rw-s- nvidiactl
+00007f771b042000  10792K rw---   [ anon ]
+00007f771bb1e000 102352K rw---   [ anon ]
+00007f7721f12000   2048K rw-s- nvidiactl
+00007f7722112000   2048K rw-s- nvidiactl
+00007f7722312000   7448K rw---   [ anon ]
+00007f7722b18000    256K rw-s- nvidiactl
+00007f7722b58000   1024K rw---   [ anon ]
+00007f7722c58000   2048K rw-s- nvidiactl
+00007f7722e58000  25568K rw---   [ anon ]
+00007f7724754000   2048K rw-s- nvidiactl
+00007f7724954000  21368K rw---   [ anon ]
+00007f7725e32000   1748K r-x-- serverbrowser_client.so
+00007f7725fe7000   2048K ----- serverbrowser_client.so
+00007f77261e7000    168K r---- serverbrowser_client.so
+00007f7726211000      8K rw--- serverbrowser_client.so
+00007f7726213000    296K rw---   [ anon ]
+00007f772625d000      4K -----   [ anon ]
+00007f772625e000  71224K rw---   [ anon ]
+00007f772a7ed000    284K r-x-- vaudio_celt_client.so
+00007f772a834000   2044K ----- vaudio_celt_client.so
+00007f772aa33000      8K r---- vaudio_celt_client.so
+00007f772aa35000      4K rw--- vaudio_celt_client.so
+00007f772aa36000      8K rw---   [ anon ]
+00007f772aa38000      4K -----   [ anon ]
+00007f772aa39000   8192K rw---   [ anon ]
+00007f772b239000      4K -----   [ anon ]
+00007f772b23a000   8192K rw---   [ anon ]
+00007f772ba3a000      4K -----   [ anon ]
+00007f772ba3b000   1024K rw---   [ anon ]
+00007f772bb3b000     12K r---- libnss_files-2.31.so
+00007f772bb3e000     28K r-x-- libnss_files-2.31.so
+00007f772bb45000      8K r---- libnss_files-2.31.so
+00007f772bb47000      4K r---- libnss_files-2.31.so
+00007f772bb48000      4K rw--- libnss_files-2.31.so
+00007f772bb49000     24K rw---   [ anon ]
+00007f772bb4f000      4K -----   [ anon ]
+00007f772bb50000  69520K rw---   [ anon ]
+00007f772ff35000      4K -----   [ anon ]
+00007f772ff36000   8192K rw---   [ anon ]
+00007f7730736000      4K -----   [ anon ]
+00007f7730737000   8192K rw---   [ anon ]
+00007f7730f37000      4K -----   [ anon ]
+00007f7730f38000   1024K rw---   [ anon ]
+00007f7731038000      4K -----   [ anon ]
+00007f7731039000   1024K rw---   [ anon ]
+00007f7731139000      4K -----   [ anon ]
+00007f773113a000   1024K rw---   [ anon ]
+00007f773123a000      4K -----   [ anon ]
+00007f773123b000   1024K rw---   [ anon ]
+00007f773133b000      4K -----   [ anon ]
+00007f773133c000     80K rw---   [ anon ]
+00007f7731350000      4K -----   [ anon ]
+00007f7731351000   1024K rw---   [ anon ]
+00007f7731451000  65536K rw-s- memfd:pulseaudio (deleted)
+00007f7735451000  65536K rw-s- memfd:pulseaudio (deleted)
+00007f7739451000  65536K rw-s- memfd:pulseaudio (deleted)
+00007f773d451000  65536K rw-s- memfd:pulseaudio (deleted)
+00007f7741451000      4K -----   [ anon ]
+00007f7741452000   8192K rw---   [ anon ]
+00007f7741c52000      4K -----   [ anon ]
+00007f7741c53000   8192K rw---   [ anon ]
+00007f7742453000  65536K rw-s- memfd:pulseaudio (deleted)
+00007f7746453000  65536K rw-s- memfd:pulseaudio (deleted)
+00007f774a453000  65536K rw-s- memfd:pulseaudio (deleted)
+00007f774e453000  65536K rw-s- memfd:pulseaudio (deleted)
+00007f7752453000      4K -----   [ anon ]
+00007f7752454000    256K rw---   [ anon ]
+00007f7752494000  65536K rw-s- memfd:pulseaudio (deleted)
+00007f7756494000  65536K rw-s- memfd:pulseaudio (deleted)
+00007f775a494000  65536K rw-s- memfd:pulseaudio (deleted)
+00007f775e494000  65536K rw-s- memfd:pulseaudio (deleted)
+00007f7762494000     80K r---- libvorbisenc.so.2.0.11
+00007f77624a8000     12K r-x-- libvorbisenc.so.2.0.11
+00007f77624ab000    476K r---- libvorbisenc.so.2.0.11
+00007f7762522000    112K r---- libvorbisenc.so.2.0.11
+00007f776253e000      4K rw--- libvorbisenc.so.2.0.11
+00007f776253f000     12K r---- libvorbis.so.0.4.8
+00007f7762542000     92K r-x-- libvorbis.so.0.4.8
+00007f7762559000     68K r---- libvorbis.so.0.4.8
+00007f776256a000      4K ----- libvorbis.so.0.4.8
+00007f776256b000      4K r---- libvorbis.so.0.4.8
+00007f776256c000      4K rw--- libvorbis.so.0.4.8
+00007f776256d000     32K r---- libFLAC.so.8.3.0
+00007f7762575000    164K r-x-- libFLAC.so.8.3.0
+00007f776259e000     40K r---- libFLAC.so.8.3.0
+00007f77625a8000      4K ----- libFLAC.so.8.3.0
+00007f77625a9000      4K r---- libFLAC.so.8.3.0
+00007f77625aa000      4K rw--- libFLAC.so.8.3.0
+00007f77625ab000     16K r---- libnsl-2.31.so
+00007f77625af000     64K r-x-- libnsl-2.31.so
+00007f77625bf000     20K r---- libnsl-2.31.so
+00007f77625c4000      4K r---- libnsl-2.31.so
+00007f77625c5000      4K rw--- libnsl-2.31.so
+00007f77625c6000      8K rw---   [ anon ]
+00007f77625c8000     12K r---- libapparmor.so.1.6.1
+00007f77625cb000     36K r-x-- libapparmor.so.1.6.1
+00007f77625d4000     28K r---- libapparmor.so.1.6.1
+00007f77625db000      4K r---- libapparmor.so.1.6.1
+00007f77625dc000      4K rw--- libapparmor.so.1.6.1
+00007f77625dd000     20K r-x-- libasyncns.so.0.3.1
+00007f77625e2000   2044K ----- libasyncns.so.0.3.1
+00007f77627e1000      4K r---- libasyncns.so.0.3.1
+00007f77627e2000      4K rw--- libasyncns.so.0.3.1
+00007f77627e3000     28K r---- libsndfile.so.1.0.28
+00007f77627ea000    332K r-x-- libsndfile.so.1.0.28
+00007f776283d000    116K r---- libsndfile.so.1.0.28
+00007f776285a000      4K ----- libsndfile.so.1.0.28
+00007f776285b000     12K r---- libsndfile.so.1.0.28
+00007f776285e000      4K rw--- libsndfile.so.1.0.28
+00007f776285f000      8K rw---   [ anon ]
+00007f7762861000     68K r---- libpulsecommon-13.99.so
+00007f7762872000    288K r-x-- libpulsecommon-13.99.so
+00007f77628ba000    148K r---- libpulsecommon-13.99.so
+00007f77628df000      4K ----- libpulsecommon-13.99.so
+00007f77628e0000      8K r---- libpulsecommon-13.99.so
+00007f77628e2000      4K rw--- libpulsecommon-13.99.so
+00007f77628e3000     48K r---- libpulse.so.0.21.2
+00007f77628ef000    192K r-x-- libpulse.so.0.21.2
+00007f776291f000     88K r---- libpulse.so.0.21.2
+00007f7762935000      8K r---- libpulse.so.0.21.2
+00007f7762937000      4K rw--- libpulse.so.0.21.2
+00007f7762938000     52K r-x-- binkalnx64.asi
+00007f7762945000   2044K ----- binkalnx64.asi
+00007f7762b44000      4K r---- binkalnx64.asi
+00007f7762b45000     12K rw--- binkalnx64.asi
+00007f7762b48000    100K r-x-- mssmp3.asi
+00007f7762b61000   2044K ----- mssmp3.asi
+00007f7762d60000      4K r---- mssmp3.asi
+00007f7762d61000      4K rw--- mssmp3.asi
+00007f7762d62000      4K rw---   [ anon ]
+00007f7762d63000    100K r-x-- mp3lnx64.asi
+00007f7762d7c000   2044K ----- mp3lnx64.asi
+00007f7762f7b000      4K r---- mp3lnx64.asi
+00007f7762f7c000      4K rw--- mp3lnx64.asi
+00007f7762f7d000      4K rw---   [ anon ]
+00007f7762f7e000    476K r-x-- libMiles.so
+00007f7762ff5000   2048K ----- libMiles.so
+00007f77631f5000      4K r---- libMiles.so
+00007f77631f6000     12K rw--- libMiles.so
+00007f77631f9000     76K rw---   [ anon ]
+00007f776320c000    192K r-x-- vaudio_miles_client.so
+00007f776323c000   2044K ----- vaudio_miles_client.so
+00007f776343b000      8K r---- vaudio_miles_client.so
+00007f776343d000      4K rw--- vaudio_miles_client.so
+00007f776343e000     12K rw---   [ anon ]
+00007f7763441000      4K -----   [ anon ]
+00007f7763442000   8192K rw---   [ anon ]
+00007f7763c42000      4K -----   [ anon ]
+00007f7763c43000   1024K rw---   [ anon ]
+00007f7763d5f000     76K rw-s- nvidiactl
+00007f7763d72000   2032K rw---   [ anon ]
+00007f7763f6e000   2048K rw-s- nvidiactl
+00007f776416e000  16208K rw---   [ anon ]
+00007f7765142000    128K rw-s- nvidiactl
+00007f7765162000    256K rw-s- nvidiactl
+00007f77651a2000    128K rw-s- nvidiactl
+00007f77651c2000    256K rw-s- nvidiactl
+00007f7765202000    256K rw-s- nvidiactl
+00007f7765242000   7168K rw---   [ anon ]
+00007f7765943000    316K r---- arial.ttf
+00007f7765992000    356K r---- FreeMono.ttf
+00007f77659eb000    316K r---- arial.ttf
+00007f7765a3a000    356K r---- FreeMono.ttf
+00007f7765a93000    316K r---- arial.ttf
+00007f7765ae2000    316K r---- arial.ttf
+00007f7765b31000    356K r---- FreeMono.ttf
+00007f7765b8a000    356K r---- FreeMono.ttf
+00007f7765be3000    356K r---- FreeMono.ttf
+00007f7765c3c000    356K r---- FreeMono.ttf
+00007f7765c95000    316K r---- arial.ttf
+00007f7765ce4000    356K r---- FreeMono.ttf
+00007f7765d3d000    316K r---- arial.ttf
+00007f7765d8c000    356K r---- FreeMono.ttf
+00007f7765de5000    356K r---- FreeMono.ttf
+00007f7765e3e000    316K r---- arial.ttf
+00007f7765e8d000    356K r---- FreeMono.ttf
+00007f7765ee6000    316K r---- arial.ttf
+00007f7765f35000    316K r---- arial.ttf
+00007f7765f84000    316K r---- arial.ttf
+00007f7765fd3000    316K r---- arial.ttf
+00007f7766022000    316K r---- arial.ttf
+00007f7766071000    356K r---- FreeMono.ttf
+00007f77660ca000    316K r---- arial.ttf
+00007f7766119000    356K r---- FreeMono.ttf
+00007f7766172000    316K r---- arial.ttf
+00007f77661c1000    356K r---- FreeMono.ttf
+00007f776621a000    316K r---- arial.ttf
+00007f7766269000    356K r---- FreeMono.ttf
+00007f77662c2000    356K r---- FreeMono.ttf
+00007f776631b000    356K r---- FreeMono.ttf
+00007f7766374000    356K r---- FreeMono.ttf
+00007f77663cd000    316K r---- arial.ttf
+00007f776641c000    356K r---- FreeMono.ttf
+00007f7766475000    316K r---- arial.ttf
+00007f77664c4000    356K r---- FreeMono.ttf
+00007f776651d000    316K r---- arial.ttf
+00007f776656c000    356K r---- FreeMono.ttf
+00007f77665c5000    316K r---- arial.ttf
+00007f7766614000    356K r---- FreeMono.ttf
+00007f776666d000    356K r---- FreeMono.ttf
+00007f77666c6000    356K r---- FreeMono.ttf
+00007f776671f000    316K r---- arial.ttf
+00007f776676e000    356K r---- FreeMono.ttf
+00007f77667c7000    316K r---- arial.ttf
+00007f7766816000    356K r---- FreeMono.ttf
+00007f776686f000    356K r---- FreeMono.ttf
+00007f77668c8000    316K r---- arial.ttf
+00007f7766917000    356K r---- FreeMono.ttf
+00007f7766970000    316K r---- arial.ttf
+00007f77669bf000    356K r---- FreeMono.ttf
+00007f7766a18000    316K r---- arial.ttf
+00007f7766a67000    356K r---- FreeMono.ttf
+00007f7766ac0000    316K r---- arial.ttf
+00007f7766b0f000    316K r---- arial.ttf
+00007f7766b5e000    356K r---- FreeMono.ttf
+00007f7766bb7000    316K r---- arial.ttf
+00007f7766c06000    356K r---- FreeMono.ttf
+00007f7766c5f000    316K r---- arial.ttf
+00007f7766cae000    356K r---- FreeMono.ttf
+00007f7766d07000    316K r---- arial.ttf
+00007f7766d56000    356K r---- FreeMono.ttf
+00007f7766daf000    316K r---- arial.ttf
+00007f7766dfe000    356K r---- FreeMono.ttf
+00007f7766e57000    316K r---- arial.ttf
+00007f7766ea6000    356K r---- FreeMono.ttf
+00007f7766eff000    316K r---- arial.ttf
+00007f7766f4e000    356K r---- FreeMono.ttf
+00007f7766fa7000    316K r---- arial.ttf
+00007f7766ff6000    356K r---- FreeMono.ttf
+00007f776704f000    316K r---- arial.ttf
+00007f776709e000    316K r---- arial.ttf
+00007f77670ed000    316K r---- arial.ttf
+00007f776713c000    316K r---- arial.ttf
+00007f776718b000    316K r---- arial.ttf
+00007f77671da000    316K r---- arial.ttf
+00007f7767229000    316K r---- arial.ttf
+00007f7767278000    316K r---- arial.ttf
+00007f77672c7000    316K r---- arial.ttf
+00007f7767316000    356K r---- FreeMono.ttf
+00007f776736f000    316K r---- arial.ttf
+00007f77673be000    356K r---- FreeMono.ttf
+00007f7767417000    316K r---- arial.ttf
+00007f7767466000    356K r---- FreeMono.ttf
+00007f77674bf000    316K r---- arial.ttf
+00007f776750e000    356K r---- FreeMono.ttf
+00007f7767567000    316K r---- arial.ttf
+00007f77675b6000    356K r---- FreeMono.ttf
+00007f776760f000    316K r---- arial.ttf
+00007f776765e000    316K r---- arial.ttf
+00007f77676ad000   2048K rw-s- nvidiactl
+00007f77678ad000   2048K rw-s- nvidiactl
+00007f7767aad000    316K r---- arial.ttf
+00007f7767afc000    316K r---- arial.ttf
+00007f7767b4b000    316K r---- arial.ttf
+00007f7767b9a000    316K r---- arial.ttf
+00007f7767be9000    316K r---- arial.ttf
+00007f7767c38000    316K r---- arial.ttf
+00007f7767c87000    316K r---- arial.ttf
+00007f7767cd6000    316K r---- arial.ttf
+00007f7767d25000    316K r---- arial.ttf
+00007f7767d74000    132K r---- trebuc.ttf
+00007f7767d95000    316K r---- arial.ttf
+00007f7767de4000    132K r---- trebuc.ttf
+00007f7767e05000    316K r---- arial.ttf
+00007f7767e54000    132K r---- trebuc.ttf
+00007f7767e75000    316K r---- arial.ttf
+00007f7767ec4000    132K r---- trebuc.ttf
+00007f7767ee5000    316K r---- arial.ttf
+00007f7767f34000    132K r---- trebuc.ttf
+00007f7767f55000    316K r---- arial.ttf
+00007f7767fa4000    132K r---- trebuc.ttf
+00007f7767fc5000    316K r---- arial.ttf
+00007f7768014000    356K r---- FreeMono.ttf
+00007f776806d000    316K r---- arial.ttf
+00007f77680bc000    356K r---- FreeMono.ttf
+00007f7768115000    316K r---- arial.ttf
+00007f7768164000    316K r---- arial.ttf
+00007f77681b3000    316K r---- arial.ttf
+00007f7768202000    300K r---- cour.ttf
+00007f776824d000    316K r---- arial.ttf
+00007f776829c000    300K r---- cour.ttf
+00007f77682e7000    316K r---- arial.ttf
+00007f7768336000    356K r---- FreeMono.ttf
+00007f776838f000    356K r---- FreeMono.ttf
+00007f77683e8000    316K r---- arial.ttf
+00007f7768437000    316K r---- arial.ttf
+00007f7768486000    316K r---- arial.ttf
+00007f77684d5000    316K r---- arial.ttf
+00007f7768524000    316K r---- arial.ttf
+00007f7768573000    316K r---- arial.ttf
+00007f77685c2000    316K r---- arial.ttf
+00007f7768611000    316K r---- arial.ttf
+00007f7768660000    316K r---- arial.ttf
+00007f77686af000    316K r---- arial.ttf
+00007f77686fe000    316K r---- arial.ttf
+00007f776874d000    316K r---- arial.ttf
+00007f776879c000    316K r---- arial.ttf
+00007f77687eb000    316K r---- arial.ttf
+00007f776883a000    316K r---- arial.ttf
+00007f7768889000    316K r---- arial.ttf
+00007f77688d8000    300K r---- cour.ttf
+00007f7768923000    316K r---- arial.ttf
+00007f7768972000    300K r---- cour.ttf
+00007f77689bd000    316K r---- arial.ttf
+00007f7768a0c000    356K r---- FreeMono.ttf
+00007f7768a65000    316K r---- arial.ttf
+00007f7768ab4000    356K r---- FreeMono.ttf
+00007f7768b0d000    316K r---- arial.ttf
+00007f7768b5c000    356K r---- FreeMono.ttf
+00007f7768bb5000    316K r---- arial.ttf
+00007f7768c04000    356K r---- FreeMono.ttf
+00007f7768c5d000    316K r---- arial.ttf
+00007f7768cac000    316K r---- arial.ttf
+00007f7768cfb000    316K r---- arial.ttf
+00007f7768d4a000    316K r---- arial.ttf
+00007f7768d99000    316K r---- arial.ttf
+00007f7768de8000    356K r---- FreeMono.ttf
+00007f7768e41000    316K r---- arial.ttf
+00007f7768e90000    356K r---- FreeMono.ttf
+00007f7768ee9000    316K r---- arial.ttf
+00007f7768f38000    356K r---- FreeMono.ttf
+00007f7768f91000    316K r---- arial.ttf
+00007f7768fe0000    356K r---- FreeMono.ttf
+00007f7769039000    316K r---- arial.ttf
+00007f7769088000    356K r---- FreeMono.ttf
+00007f77690e1000    316K r---- arial.ttf
+00007f7769130000    356K r---- FreeMono.ttf
+00007f7769189000    316K r---- arial.ttf
+00007f77691d8000    316K r---- arial.ttf
+00007f7769227000    316K r---- arial.ttf
+00007f7769276000    316K r---- arial.ttf
+00007f77692c5000    316K r---- arial.ttf
+00007f7769314000    316K r---- arial.ttf
+00007f7769363000    316K r---- arial.ttf
+00007f77693b2000    316K r---- arial.ttf
+00007f7769401000    316K r---- arial.ttf
+00007f7769450000    316K r---- arial.ttf
+00007f776949f000    316K r---- arial.ttf
+00007f77694ee000    316K r---- arial.ttf
+00007f776953d000    316K r---- arial.ttf
+00007f776958c000    356K r---- FreeMono.ttf
+00007f77695e5000    316K r---- arial.ttf
+00007f7769634000    356K r---- FreeMono.ttf
+00007f776968d000    316K r---- arial.ttf
+00007f77696dc000    356K r---- FreeMono.ttf
+00007f7769735000    316K r---- arial.ttf
+00007f7769784000    356K r---- FreeMono.ttf
+00007f77697dd000    316K r---- arial.ttf
+00007f776982c000    356K r---- FreeMono.ttf
+00007f7769885000    316K r---- arial.ttf
+00007f77698d4000    356K r---- FreeMono.ttf
+00007f776992d000    316K r---- arial.ttf
+00007f776997c000    356K r---- FreeMono.ttf
+00007f77699d5000    316K r---- arial.ttf
+00007f7769a24000    356K r---- FreeMono.ttf
+00007f7769a7d000    316K r---- arial.ttf
+00007f7769acc000    356K r---- FreeMono.ttf
+00007f7769b25000    316K r---- arial.ttf
+00007f7769b74000    356K r---- FreeMono.ttf
+00007f7769bcd000    316K r---- arial.ttf
+00007f7769c1c000    316K r---- arial.ttf
+00007f7769c6b000    316K r---- arial.ttf
+00007f7769cba000    316K r---- arial.ttf
+00007f7769d09000    316K r---- arial.ttf
+00007f7769d58000    316K r---- arial.ttf
+00007f7769da7000    316K r---- arial.ttf
+00007f7769df6000    316K r---- arial.ttf
+00007f7769e45000    316K r---- arial.ttf
+00007f7769e94000    316K r---- arial.ttf
+00007f7769ee3000    316K r---- arial.ttf
+00007f7769f32000    316K r---- arial.ttf
+00007f7769f81000    316K r---- arial.ttf
+00007f7769fd0000    316K r---- arial.ttf
+00007f776a01f000    316K r---- arial.ttf
+00007f776a06e000    316K r---- arial.ttf
+00007f776a0bd000    316K r---- arial.ttf
+00007f776a10c000    316K r---- arial.ttf
+00007f776a15b000    316K r---- arial.ttf
+00007f776a1aa000    316K r---- arial.ttf
+00007f776a1f9000    316K r---- arial.ttf
+00007f776a248000    316K r---- arial.ttf
+00007f776a297000    316K r---- arial.ttf
+00007f776a2e6000    316K r---- arial.ttf
+00007f776a335000    316K r---- arial.ttf
+00007f776a384000    316K r---- arial.ttf
+00007f776a3d3000    316K r---- arial.ttf
+00007f776a422000    316K r---- arial.ttf
+00007f776a471000    568K r---- FreeSerifItalic.ttf
+00007f776a4ff000    316K r---- arial.ttf
+00007f776a54e000    568K r---- FreeSerifItalic.ttf
+00007f776a5dc000    316K r---- arial.ttf
+00007f776a62b000    356K r---- FreeMono.ttf
+00007f776a684000    316K r---- arial.ttf
+00007f776a6d3000    356K r---- FreeMono.ttf
+00007f776a72c000    316K r---- arial.ttf
+00007f776a77b000    568K r---- FreeSerifItalic.ttf
+00007f776a809000    316K r---- arial.ttf
+00007f776a858000    568K r---- FreeSerifItalic.ttf
+00007f776a8e6000    316K r---- arial.ttf
+00007f776a935000    116K r---- lucon.ttf
+00007f776a952000    316K r---- arial.ttf
+00007f776a9a1000    116K r---- lucon.ttf
+00007f776a9be000    316K r---- arial.ttf
+00007f776aa0d000    116K r---- lucon.ttf
+00007f776aa2a000    316K r---- arial.ttf
+00007f776aa79000    116K r---- lucon.ttf
+00007f776aa96000    316K r---- arial.ttf
+00007f776aae5000    132K r---- trebuc.ttf
+00007f776ab06000    316K r---- arial.ttf
+00007f776ab55000    132K r---- trebuc.ttf
+00007f776ab76000    316K r---- arial.ttf
+00007f776abc5000    132K r---- trebuc.ttf
+00007f776abe6000    316K r---- arial.ttf
+00007f776ac35000    132K r---- trebuc.ttf
+00007f776ac56000    316K r---- arial.ttf
+00007f776aca5000    132K r---- trebuc.ttf
+00007f776acc6000    316K r---- arial.ttf
+00007f776ad15000    132K r---- trebuc.ttf
+00007f776ad36000    316K r---- arial.ttf
+00007f776ad85000    132K r---- trebuc.ttf
+00007f776ada6000    316K r---- arial.ttf
+00007f776adf5000    132K r---- trebuc.ttf
+00007f776ae16000    316K r---- arial.ttf
+00007f776ae65000    132K r---- trebuc.ttf
+00007f776ae86000    316K r---- arial.ttf
+00007f776aed5000    132K r---- trebuc.ttf
+00007f776aef6000    316K r---- arial.ttf
+00007f776af45000    132K r---- trebuc.ttf
+00007f776af66000    316K r---- arial.ttf
+00007f776afb5000    132K r---- trebuc.ttf
+00007f776afd6000    316K r---- arial.ttf
+00007f776b025000    132K r---- trebuc.ttf
+00007f776b046000    316K r---- arial.ttf
+00007f776b095000    132K r---- trebuc.ttf
+00007f776b0b6000    316K r---- arial.ttf
+00007f776b105000    132K r---- trebuc.ttf
+00007f776b126000    316K r---- arial.ttf
+00007f776b175000    132K r---- trebuc.ttf
+00007f776b196000    316K r---- arial.ttf
+00007f776b1e5000    316K r---- arial.ttf
+00007f776b234000    316K r---- arial.ttf
+00007f776b283000    116K r---- lucon.ttf
+00007f776b2a0000    316K r---- arial.ttf
+00007f776b2ef000    116K r---- lucon.ttf
+00007f776b30c000    356K r---- FreeMono.ttf
+00007f776b365000  10244K rw-s- u1000-Shm_5006b0d6
+00007f776bd66000  10244K rw-s- u1000-Shm_496b2928
+00007f776c768000    316K r---- arial.ttf
+00007f776c7b7000    316K r---- arial.ttf
+00007f776c806000    356K r---- FreeMono.ttf
+00007f776c85f000    316K r---- arial.ttf
+00007f776c8ae000    356K r---- FreeMono.ttf
+00007f776c907000    316K r---- arial.ttf
+00007f776c956000    356K r---- FreeMono.ttf
+00007f776c9af000    316K r---- arial.ttf
+00007f776c9fe000    356K r---- FreeMono.ttf
+00007f776ca57000    356K r---- FreeMono.ttf
+00007f776cab0000    356K r---- FreeMono.ttf
+00007f776cb09000    316K r---- arial.ttf
+00007f776cb58000    356K r---- FreeMono.ttf
+00007f776cbb1000    316K r---- arial.ttf
+00007f776cc00000    356K r---- FreeMono.ttf
+00007f776cc59000    316K r---- arial.ttf
+00007f776cca8000    356K r---- FreeMono.ttf
+00007f776cd01000    316K r---- arial.ttf
+00007f776cd50000    356K r---- FreeMono.ttf
+00007f776cda9000    316K r---- arial.ttf
+00007f776cdf8000    356K r---- FreeMono.ttf
+00007f776ce51000    316K r---- arial.ttf
+00007f776cea0000    356K r---- FreeMono.ttf
+00007f776cef9000    316K r---- arial.ttf
+00007f776cf48000    356K r---- FreeMono.ttf
+00007f776cfa1000    316K r---- arial.ttf
+00007f776cff0000    356K r---- FreeMono.ttf
+00007f776d049000    316K r---- arial.ttf
+00007f776d098000    356K r---- FreeMono.ttf
+00007f776d0f1000    316K r---- arial.ttf
+00007f776d140000    356K r---- FreeMono.ttf
+00007f776d199000    316K r---- arial.ttf
+00007f776d1e8000    356K r---- FreeMono.ttf
+00007f776d241000    316K r---- arial.ttf
+00007f776d290000    356K r---- FreeMono.ttf
+00007f776d2e9000    316K r---- arial.ttf
+00007f776d338000    356K r---- FreeMono.ttf
+00007f776d391000    316K r---- arial.ttf
+00007f776d3e0000    356K r---- FreeMono.ttf
+00007f776d439000    316K r---- arial.ttf
+00007f776d488000    356K r---- FreeMono.ttf
+00007f776d4e1000    316K r---- arial.ttf
+00007f776d530000    356K r---- FreeMono.ttf
+00007f776d589000    316K r---- arial.ttf
+00007f776d5d8000    356K r---- FreeMono.ttf
+00007f776d631000    316K r---- arial.ttf
+00007f776d680000    356K r---- FreeMono.ttf
+00007f776d6d9000    316K r---- arial.ttf
+00007f776d728000    356K r---- FreeMono.ttf
+00007f776d781000    316K r---- arial.ttf
+00007f776d7d0000    356K r---- FreeMono.ttf
+00007f776d829000    316K r---- arial.ttf
+00007f776d878000    116K r---- lucon.ttf
+00007f776d895000    316K r---- arial.ttf
+00007f776d8e4000    116K r---- lucon.ttf
+00007f776d901000    316K r---- arial.ttf
+00007f776d950000    300K r---- cour.ttf
+00007f776d99b000    316K r---- arial.ttf
+00007f776d9ea000    300K r---- cour.ttf
+00007f776da35000    316K r---- arial.ttf
+00007f776da84000    300K r---- cour.ttf
+00007f776dacf000    316K r---- arial.ttf
+00007f776db1e000    300K r---- cour.ttf
+00007f776db69000    152K r-x-- libpng12.so.0.46.0
+00007f776db8f000   2048K ----- libpng12.so.0.46.0
+00007f776dd8f000      4K r---- libpng12.so.0.46.0
+00007f776dd90000      4K rw--- libpng12.so.0.46.0
+00007f776dd91000   1804K r-x-- libpango-1.0.so
+00007f776df54000   2044K ----- libpango-1.0.so
+00007f776e153000     16K rw--- libpango-1.0.so
+00007f776e157000      8K rw---   [ anon ]
+00007f776e159000   1220K r-x-- libpangoft2-1.0.so
+00007f776e28a000   2048K ----- libpangoft2-1.0.so
+00007f776e48a000     44K rw--- libpangoft2-1.0.so
+00007f776e495000      4K -----   [ anon ]
+00007f776e496000   1024K rw---   [ anon ]
+00007f776e596000      4K -----   [ anon ]
+00007f776e597000   8192K rw---   [ anon ]
+00007f776eda7000     76K rw-s- nvidiactl
+00007f776edba000    128K rw-s- nvidiactl
+00007f776edda000    256K rw-s- nvidiactl
+00007f776ee1a000   2048K rw-s- nvidiactl
+00007f776f01a000   2048K rw-s- nvidiactl
+00007f776f21a000   2048K rw-s- nvidiactl
+00007f776f41a000    512K rw-s- nvidiactl
+00007f776f49a000    512K rw-s- nvidiactl
+00007f776f52c000    128K rw-s- nvidiactl
+00007f776f54c000    256K rw-s- nvidiactl
+00007f776f58c000      4K r---- libnss_dns-2.31.so
+00007f776f58d000     16K r-x-- libnss_dns-2.31.so
+00007f776f591000      4K r---- libnss_dns-2.31.so
+00007f776f592000      4K r---- libnss_dns-2.31.so
+00007f776f593000      4K rw--- libnss_dns-2.31.so
+00007f776f594000      4K r---- libnss_mdns4_minimal.so.2
+00007f776f595000      8K r-x-- libnss_mdns4_minimal.so.2
+00007f776f597000      4K r---- libnss_mdns4_minimal.so.2
+00007f776f598000      4K r---- libnss_mdns4_minimal.so.2
+00007f776f599000      4K rw--- libnss_mdns4_minimal.so.2
+00007f776f59a000      8K r---- libogg.so.0.8.4
+00007f776f59c000     20K r-x-- libogg.so.0.8.4
+00007f776f5a1000     12K r---- libogg.so.0.8.4
+00007f776f5a4000      4K ----- libogg.so.0.8.4
+00007f776f5a5000      4K r---- libogg.so.0.8.4
+00007f776f5a6000      4K rw--- libogg.so.0.8.4
+00007f776f5a7000    316K r---- arial.ttf
+00007f776f5f6000    356K r---- FreeMono.ttf
+00007f776f64f000    316K r---- arial.ttf
+00007f776f69e000    356K r---- FreeMono.ttf
+00007f776f6f7000    316K r---- arial.ttf
+00007f776f746000    356K r---- FreeMono.ttf
+00007f776f79f000    316K r---- arial.ttf
+00007f776f7ee000    356K r---- FreeMono.ttf
+00007f776f847000    316K r---- arial.ttf
+00007f776f896000    356K r---- FreeMono.ttf
+00007f776f8ef000    316K r---- arial.ttf
+00007f776f93e000    356K r---- FreeMono.ttf
+00007f776f997000      4K -----   [ anon ]
+00007f776f998000   1536K rw---   [ anon ]
+00007f776fb18000      4K -----   [ anon ]
+00007f776fb19000   1536K rw---   [ anon ]
+00007f776fc99000      4K -----   [ anon ]
+00007f776fc9a000   1536K rw---   [ anon ]
+00007f776fe1a000      4K -----   [ anon ]
+00007f776fe1b000   1536K rw---   [ anon ]
+00007f776ff9b000      4K -----   [ anon ]
+00007f776ff9c000   1024K rw---   [ anon ]
+00007f777009c000    192K r-x-- scenefilecache_client.so
+00007f77700cc000   2048K ----- scenefilecache_client.so
+00007f77702cc000      8K r---- scenefilecache_client.so
+00007f77702ce000      4K rw--- scenefilecache_client.so
+00007f77702cf000     12K rw---   [ anon ]
+00007f77702d2000  23976K r-x-- server_client.so
+00007f7771a3c000   2044K ----- server_client.so
+00007f7771c3b000   1976K r---- server_client.so
+00007f7771e29000    764K rw--- server_client.so
+00007f7771ee8000   2328K rw---   [ anon ]
+00007f777212e000  30696K r-x-- client_client.so
+00007f7773f28000   2048K ----- client_client.so
+00007f7774128000   2384K r---- client_client.so
+00007f777437c000    540K rw--- client_client.so
+00007f7774403000  76712K rw---   [ anon ]
+00007f7778eed000    832K r-x-- matchmaking_client.so
+00007f7778fbd000   2048K ----- matchmaking_client.so
+00007f77791bd000     28K r---- matchmaking_client.so
+00007f77791c4000      8K rw--- matchmaking_client.so
+00007f77791c6000    292K rw---   [ anon ]
+00007f7779213000     16K rw-s- nvidiactl
+00007f7779217000      4K rw-s- nvidia0
+00007f7779218000      8K rw-s- nvidiactl
+00007f777921a000      4K rw-s- nvidia0
+00007f777921b000      4K rw-s- nvidia0
+00007f777921c000      4K rw-s- nvidia0
+00007f777921d000      4K rw-s- nvidiactl
+00007f777921e000      4K rw-s- nvidia0
+00007f777921f000      8K rw-s- nvidiactl
+00007f7779221000    128K rw-s- nvidiactl
+00007f7779241000    316K r---- arial.ttf
+00007f7779290000    300K r---- cour.ttf
+00007f77792db000    316K r---- arial.ttf
+00007f777932a000    300K r---- cour.ttf
+00007f7779375000    316K r---- arial.ttf
+00007f77793c4000    300K r---- cour.ttf
+00007f777940f000     12K r---- libwrap.so.0.7.6
+00007f7779412000     20K r-x-- libwrap.so.0.7.6
+00007f7779417000      8K r---- libwrap.so.0.7.6
+00007f7779419000      4K r---- libwrap.so.0.7.6
+00007f777941a000      4K rw--- libwrap.so.0.7.6
+00007f777941b000      8K r---- libpulse-simple.so.0.1.1
+00007f777941d000      8K r-x-- libpulse-simple.so.0.1.1
+00007f777941f000      4K r---- libpulse-simple.so.0.1.1
+00007f7779420000      4K r---- libpulse-simple.so.0.1.1
+00007f7779421000      4K rw--- libpulse-simple.so.0.1.1
+00007f7779422000      4K -----   [ anon ]
+00007f7779423000     16K rw---   [ anon ]
+00007f7779427000      8K r---- marlett.ttf
+00007f7779429000      8K r---- marlett.ttf
+00007f777942b000      8K r---- marlett.ttf
+00007f777942d000      8K r---- marlett.ttf
+00007f777942f000    316K r---- arial.ttf
+00007f777947e000    356K r---- FreeMono.ttf
+00007f77794d7000    316K r---- arial.ttf
+00007f7779526000    356K r---- FreeMono.ttf
+00007f777957f000    316K r---- arial.ttf
+00007f77795ce000    356K r---- FreeMono.ttf
+00007f7779627000    316K r---- arial.ttf
+00007f7779676000    356K r---- FreeMono.ttf
+00007f77796cf000    316K r---- arial.ttf
+00007f777971e000    356K r---- FreeMono.ttf
+00007f7779777000    316K r---- arial.ttf
+00007f77797c6000    356K r---- FreeMono.ttf
+00007f777981f000    316K r---- arial.ttf
+00007f777986e000    356K r---- FreeMono.ttf
+00007f77798c7000    316K r---- arial.ttf
+00007f7779916000    356K r---- FreeMono.ttf
+00007f777996f000    316K r---- arial.ttf
+00007f77799be000    356K r---- FreeMono.ttf
+00007f7779a17000    316K r---- arial.ttf
+00007f7779a66000    356K r---- FreeMono.ttf
+00007f7779abf000    316K r---- arial.ttf
+00007f7779b0e000    356K r---- FreeMono.ttf
+00007f7779b67000    316K r---- arial.ttf
+00007f7779bb6000    356K r---- FreeMono.ttf
+00007f7779c0f000   2048K rw-s- nvidiactl
+00007f7779e0f000   1024K rw-s- nvidiactl
+00007f7779f0f000   1024K rw-s- nvidiactl
+00007f777a00f000   1024K rw-s- nvidiactl
+00007f777a10f000   2048K rw-s- nvidiactl
+00007f777a30f000   2048K rw-s- nvidiactl
+00007f777a50f000   2048K rw-s- nvidiactl
+00007f777a70f000      4K -----   [ anon ]
+00007f777a710000   1024K rw---   [ anon ]
+00007f777a810000      4K -----   [ anon ]
+00007f777a811000   8192K rw---   [ anon ]
+00007f777b011000   1308K r-x-- stdshader_dx9_client.so
+00007f777b158000   2048K ----- stdshader_dx9_client.so
+00007f777b358000     88K r---- stdshader_dx9_client.so
+00007f777b36e000      4K rw--- stdshader_dx9_client.so
+00007f777b36f000    192K rw---   [ anon ]
+00007f777b39f000   1028K rw-s- u1000-Shm_3c3a3c3d
+00007f777b4a0000    100K rw-s- u1000-Shm_c4fbc703
+00007f777b4b9000    656K rw-s- u1000-Shm_671c2a99
+00007f777b55d000    260K rw-s- u1000-Shm_fe20b6d7
+00007f777b59e000     64K rw-s- u1000-Shm_c9edbd50
+00007f777b5ae000   2048K rw-s- u1000-ValveIPCSharedObj-Steam
+00007f777b7ae000     48K r-x-- libudev.so.0.13.0
+00007f777b7ba000   2044K ----- libudev.so.0.13.0
+00007f777b9b9000      4K r---- libudev.so.0.13.0
+00007f777b9ba000      4K rw--- libudev.so.0.13.0
+00007f777b9bb000      4K -----   [ anon ]
+00007f777b9bc000   8192K rw---   [ anon ]
+00007f777c1bc000    820K r-x-- crashhandler.so
+00007f777c289000     28K r---- crashhandler.so
+00007f777c290000      4K rw--- crashhandler.so
+00007f777c291000    116K rw---   [ anon ]
+00007f777c2ae000  31088K r-x-- steamclient.so
+00007f777e10a000      4K ----- steamclient.so
+00007f777e10b000   1460K r---- steamclient.so
+00007f777e278000    180K rw--- steamclient.so
+00007f777e2a5000    536K rw---   [ anon ]
+00007f777e32b000   1688K r-x-- panorama_text_pango_client.so
+00007f777e4d1000   2048K ----- panorama_text_pango_client.so
+00007f777e6d1000     60K r---- panorama_text_pango_client.so
+00007f777e6e0000      8K rw--- panorama_text_pango_client.so
+00007f777e6e2000     44K rw---   [ anon ]
+00007f777e6ed000    312K r-x-- localize_client.so
+00007f777e73b000   2048K ----- localize_client.so
+00007f777e93b000     12K r---- localize_client.so
+00007f777e93e000      4K rw--- localize_client.so
+00007f777e93f000     80K rw---   [ anon ]
+00007f777e953000   1108K r-x-- shaderapidx9_client.so
+00007f777ea68000   2048K ----- shaderapidx9_client.so
+00007f777ec68000     36K r---- shaderapidx9_client.so
+00007f777ec71000      8K rw--- shaderapidx9_client.so
+00007f777ec73000    228K rw---   [ anon ]
+00007f777ecac000   1216K r-x-- libcairo_client.so
+00007f777eddc000   2044K ----- libcairo_client.so
+00007f777efdb000     36K r---- libcairo_client.so
+00007f777efe4000      4K rw--- libcairo_client.so
+00007f777efe5000      4K rw---   [ anon ]
+00007f777efe6000     56K r-x-- libv8_libplatform.so
+00007f777eff4000      4K r---- libv8_libplatform.so
+00007f777eff5000      4K rw--- libv8_libplatform.so
+00007f777eff6000   5136K r-x-- panorama_gl_client.so
+00007f777f4fa000   2044K ----- panorama_gl_client.so
+00007f777f6f9000    284K r---- panorama_gl_client.so
+00007f777f740000     24K rw--- panorama_gl_client.so
+00007f777f746000    424K rw---   [ anon ]
+00007f777f7b0000      8K r---- libbz2.so.1.0.4
+00007f777f7b2000     52K r-x-- libbz2.so.1.0.4
+00007f777f7bf000      8K r---- libbz2.so.1.0.4
+00007f777f7c1000      4K r---- libbz2.so.1.0.4
+00007f777f7c2000      4K rw--- libbz2.so.1.0.4
+00007f777f7c3000    292K r-x-- libswscale.so.3
+00007f777f80c000   2044K ----- libswscale.so.3
+00007f777fa0b000      8K rw--- libswscale.so.3
+00007f777fa0d000    140K r-x-- libavutil.so.54
+00007f777fa30000   2044K ----- libavutil.so.54
+00007f777fc2f000     16K rw--- libavutil.so.54
+00007f777fc33000     16K rw---   [ anon ]
+00007f777fc37000    116K r-x-- libavresample.so.2
+00007f777fc54000   2044K ----- libavresample.so.2
+00007f777fe53000      8K rw--- libavresample.so.2
+00007f777fe55000    228K r-x-- libavformat.so.56
+00007f777fe8e000   2044K ----- libavformat.so.56
+00007f778008d000     16K rw--- libavformat.so.56
+00007f7780091000   2256K r-x-- libavcodec.so.56
+00007f77802c5000   2048K ----- libavcodec.so.56
+00007f77804c5000     60K rw--- libavcodec.so.56
+00007f77804d4000   1184K rw---   [ anon ]
+00007f77805fc000   1524K r-x-- libicuuc.so
+00007f7780779000      4K ----- libicuuc.so
+00007f778077a000     76K r---- libicuuc.so
+00007f778078d000      4K rw--- libicuuc.so
+00007f778078e000      4K rw---   [ anon ]
+00007f778078f000   2216K r-x-- libicui18n.so
+00007f77809b9000     84K r---- libicui18n.so
+00007f77809ce000      4K rw--- libicui18n.so
+00007f77809cf000     92K r-x-- libv8_libbase.so
+00007f77809e6000      4K r---- libv8_libbase.so
+00007f77809e7000      4K rw--- libv8_libbase.so
+00007f77809e8000   3756K r-x-- libvideo.so
+00007f7780d93000   2044K ----- libvideo.so
+00007f7780f92000    192K r---- libvideo.so
+00007f7780fc2000     92K rw--- libvideo.so
+00007f7780fd9000    136K rw---   [ anon ]
+00007f7780ffb000  13908K r-x-- libv8.so
+00007f7781d90000      4K ----- libv8.so
+00007f7781d91000    312K r---- libv8.so
+00007f7781ddf000     28K rw--- libv8.so
+00007f7781de6000     52K rw---   [ anon ]
+00007f7781df3000   2512K r-x-- panoramauiclient_client.so
+00007f7782067000   2044K ----- panoramauiclient_client.so
+00007f7782266000     96K r---- panoramauiclient_client.so
+00007f778227e000      8K rw--- panoramauiclient_client.so
+00007f7782280000    232K rw---   [ anon ]
+00007f77822ba000    440K r-x-- vgui2_client.so
+00007f7782328000   2044K ----- vgui2_client.so
+00007f7782527000     20K r---- vgui2_client.so
+00007f778252c000      8K rw--- vgui2_client.so
+00007f778252e000     84K rw---   [ anon ]
+00007f7782543000     20K r---- libpng16.so.16.37.0
+00007f7782548000    148K r-x-- libpng16.so.16.37.0
+00007f778256d000     48K r---- libpng16.so.16.37.0
+00007f7782579000      4K r---- libpng16.so.16.37.0
+00007f778257a000      4K rw--- libpng16.so.16.37.0
+00007f778257b000      8K r---- libuuid.so.1.3.0
+00007f778257d000     16K r-x-- libuuid.so.1.3.0
+00007f7782581000      4K r---- libuuid.so.1.3.0
+00007f7782582000      4K r---- libuuid.so.1.3.0
+00007f7782583000      4K rw--- libuuid.so.1.3.0
+00007f7782584000     16K r---- libexpat.so.1.6.11
+00007f7782588000    112K r-x-- libexpat.so.1.6.11
+00007f77825a4000     40K r---- libexpat.so.1.6.11
+00007f77825ae000      4K ----- libexpat.so.1.6.11
+00007f77825af000      8K r---- libexpat.so.1.6.11
+00007f77825b1000      4K rw--- libexpat.so.1.6.11
+00007f77825b2000     48K r---- libfreetype.so.6.17.1
+00007f77825be000    512K r-x-- libfreetype.so.6.17.1
+00007f778263e000    168K r---- libfreetype.so.6.17.1
+00007f7782668000      4K ----- libfreetype.so.6.17.1
+00007f7782669000     28K r---- libfreetype.so.6.17.1
+00007f7782670000      4K rw--- libfreetype.so.6.17.1
+00007f7782671000     28K r---- libfontconfig.so.1.12.0
+00007f7782678000    148K r-x-- libfontconfig.so.1.12.0
+00007f778269d000     96K r---- libfontconfig.so.1.12.0
+00007f77826b5000      8K r---- libfontconfig.so.1.12.0
+00007f77826b7000      4K rw--- libfontconfig.so.1.12.0
+00007f77826b8000   1516K r-x-- vguimatsurface_client.so
+00007f7782833000   2044K ----- vguimatsurface_client.so
+00007f7782a32000     92K r---- vguimatsurface_client.so
+00007f7782a49000     12K rw--- vguimatsurface_client.so
+00007f7782a4c000    372K rw---   [ anon ]
+00007f7782aa9000    668K r-x-- vscript_client.so
+00007f7782b50000   2044K ----- vscript_client.so
+00007f7782d4f000     16K r---- vscript_client.so
+00007f7782d53000     24K rw--- vscript_client.so
+00007f7782d59000     76K rw---   [ anon ]
+00007f7782d6c000    316K r-x-- soundemittersystem_client.so
+00007f7782dbb000   2048K ----- soundemittersystem_client.so
+00007f7782fbb000     12K r---- soundemittersystem_client.so
+00007f7782fbe000      4K rw--- soundemittersystem_client.so
+00007f7782fbf000     80K rw---   [ anon ]
+00007f7782fd3000    952K r-x-- studiorender_client.so
+00007f77830c1000   2044K ----- studiorender_client.so
+00007f77832c0000     16K r---- studiorender_client.so
+00007f77832c4000      4K rw--- studiorender_client.so
+00007f77832c5000   3900K rw---   [ anon ]
+00007f7783694000    752K r-x-- datacache_client.so
+00007f7783750000   2048K ----- datacache_client.so
+00007f7783950000     20K r---- datacache_client.so
+00007f7783955000     76K rw--- datacache_client.so
+00007f7783968000    248K rw---   [ anon ]
+00007f77839a6000   1532K r-x-- materialsystem_client.so
+00007f7783b25000   2048K ----- materialsystem_client.so
+00007f7783d25000     80K r---- materialsystem_client.so
+00007f7783d39000     16K rw--- materialsystem_client.so
+00007f7783d3d000    236K rw---   [ anon ]
+00007f7783d78000   1760K r-x-- vphysics_client.so
+00007f7783f30000   2044K ----- vphysics_client.so
+00007f778412f000     48K r---- vphysics_client.so
+00007f778413b000     36K rw--- vphysics_client.so
+00007f7784144000    100K rw---   [ anon ]
+00007f778415d000    404K r-x-- inputsystem_client.so
+00007f77841c2000   2044K ----- inputsystem_client.so
+00007f77843c1000     28K r---- inputsystem_client.so
+00007f77843c8000      4K rw--- inputsystem_client.so
+00007f77843c9000    292K rw---   [ anon ]
+00007f7784412000      8K r---- libcrypt.so.1.1.0
+00007f7784414000     84K r-x-- libcrypt.so.1.1.0
+00007f7784429000    104K r---- libcrypt.so.1.1.0
+00007f7784443000      4K r---- libcrypt.so.1.1.0
+00007f7784444000      4K rw--- libcrypt.so.1.1.0
+00007f7784445000     32K rw---   [ anon ]
+00007f778444d000     56K r---- libsqlite3.so.0.8.6
+00007f778445b000    896K r-x-- libsqlite3.so.0.8.6
+00007f778453b000    208K r---- libsqlite3.so.0.8.6
+00007f778456f000      4K ----- libsqlite3.so.0.8.6
+00007f7784570000     12K r---- libsqlite3.so.0.8.6
+00007f7784573000     12K rw--- libsqlite3.so.0.8.6
+00007f7784576000     64K r---- libhx509.so.5.0.0
+00007f7784586000    164K r-x-- libhx509.so.5.0.0
+00007f77845af000     64K r---- libhx509.so.5.0.0
+00007f77845bf000     12K r---- libhx509.so.5.0.0
+00007f77845c2000      4K rw--- libhx509.so.5.0.0
+00007f77845c3000      4K rw---   [ anon ]
+00007f77845c4000     12K r---- libheimbase.so.1.0.0
+00007f77845c7000     36K r-x-- libheimbase.so.1.0.0
+00007f77845d0000     16K r---- libheimbase.so.1.0.0
+00007f77845d4000      4K r---- libheimbase.so.1.0.0
+00007f77845d5000      4K rw--- libheimbase.so.1.0.0
+00007f77845d6000      4K r---- libwind.so.0.0.0
+00007f77845d7000      8K r-x-- libwind.so.0.0.0
+00007f77845d9000    148K r---- libwind.so.0.0.0
+00007f77845fe000      4K r---- libwind.so.0.0.0
+00007f77845ff000      4K rw--- libwind.so.0.0.0
+00007f7784600000     20K r---- libroken.so.18.1.0
+00007f7784605000     52K r-x-- libroken.so.18.1.0
+00007f7784612000     16K r---- libroken.so.18.1.0
+00007f7784616000      4K ----- libroken.so.18.1.0
+00007f7784617000      4K r---- libroken.so.18.1.0
+00007f7784618000      4K rw--- libroken.so.18.1.0
+00007f7784619000     28K r---- libhcrypto.so.4.1.0
+00007f7784620000    124K r-x-- libhcrypto.so.4.1.0
+00007f778463f000     56K r---- libhcrypto.so.4.1.0
+00007f778464d000      8K r---- libhcrypto.so.4.1.0
+00007f778464f000      4K rw--- libhcrypto.so.4.1.0
+00007f7784650000      4K rw---   [ anon ]
+00007f7784651000    104K r---- libasn1.so.8.0.0
+00007f778466b000    428K r-x-- libasn1.so.8.0.0
+00007f77846d6000    116K r---- libasn1.so.8.0.0
+00007f77846f3000      4K ----- libasn1.so.8.0.0
+00007f77846f4000      4K r---- libasn1.so.8.0.0
+00007f77846f5000     12K rw--- libasn1.so.8.0.0
+00007f77846f8000    108K r---- libkrb5.so.26.0.0
+00007f7784713000    324K r-x-- libkrb5.so.26.0.0
+00007f7784764000    128K r---- libkrb5.so.26.0.0
+00007f7784784000     16K r---- libkrb5.so.26.0.0
+00007f7784788000      8K rw--- libkrb5.so.26.0.0
+00007f778478a000      4K rw---   [ anon ]
+00007f778478b000     12K r---- libheimntlm.so.0.1.0
+00007f778478e000     16K r-x-- libheimntlm.so.0.1.0
+00007f7784792000      8K r---- libheimntlm.so.0.1.0
+00007f7784794000      4K ----- libheimntlm.so.0.1.0
+00007f7784795000      4K r---- libheimntlm.so.0.1.0
+00007f7784796000      4K rw--- libheimntlm.so.0.1.0
+00007f7784797000      8K r---- libkeyutils.so.1.8
+00007f7784799000      8K r-x-- libkeyutils.so.1.8
+00007f778479b000      4K r---- libkeyutils.so.1.8
+00007f778479c000      4K r---- libkeyutils.so.1.8
+00007f778479d000      4K rw--- libkeyutils.so.1.8
+00007f778479e000      8K r---- libffi.so.7.1.0
+00007f77847a0000     24K r-x-- libffi.so.7.1.0
+00007f77847a6000      4K r---- libffi.so.7.1.0
+00007f77847a7000      4K ----- libffi.so.7.1.0
+00007f77847a8000      4K r---- libffi.so.7.1.0
+00007f77847a9000      4K rw--- libffi.so.7.1.0
+00007f77847aa000      4K r---- libbrotlicommon.so.1.0.7
+00007f77847ab000      4K r-x-- libbrotlicommon.so.1.0.7
+00007f77847ac000    124K r---- libbrotlicommon.so.1.0.7
+00007f77847cb000      4K r---- libbrotlicommon.so.1.0.7
+00007f77847cc000      4K rw--- libbrotlicommon.so.1.0.7
+00007f77847cd000     52K r---- libgssapi.so.3.0.0
+00007f77847da000    164K r-x-- libgssapi.so.3.0.0
+00007f7784803000     44K r---- libgssapi.so.3.0.0
+00007f778480e000      8K r---- libgssapi.so.3.0.0
+00007f7784810000      8K rw--- libgssapi.so.3.0.0
+00007f7784812000     12K r---- libsasl2.so.2.0.25
+00007f7784815000     72K r-x-- libsasl2.so.2.0.25
+00007f7784827000     24K r---- libsasl2.so.2.0.25
+00007f778482d000      4K r---- libsasl2.so.2.0.25
+00007f778482e000      4K rw--- libsasl2.so.2.0.25
+00007f778482f000     16K r---- libresolv-2.31.so
+00007f7784833000     64K r-x-- libresolv-2.31.so
+00007f7784843000     16K r---- libresolv-2.31.so
+00007f7784847000      4K r---- libresolv-2.31.so
+00007f7784848000      4K rw--- libresolv-2.31.so
+00007f7784849000      8K rw---   [ anon ]
+00007f778484b000     12K r---- libkrb5support.so.0.1
+00007f778484e000     28K r-x-- libkrb5support.so.0.1
+00007f7784855000     12K r---- libkrb5support.so.0.1
+00007f7784858000      4K r---- libkrb5support.so.0.1
+00007f7784859000      4K rw--- libkrb5support.so.0.1
+00007f778485a000     16K r---- libk5crypto.so.3.1
+00007f778485e000    112K r-x-- libk5crypto.so.3.1
+00007f778487a000     52K r---- libk5crypto.so.3.1
+00007f7784887000      4K ----- libk5crypto.so.3.1
+00007f7784888000      4K r---- libk5crypto.so.3.1
+00007f7784889000      4K rw--- libk5crypto.so.3.1
+00007f778488a000      4K rw---   [ anon ]
+00007f778488b000    136K r---- libkrb5.so.3.3
+00007f77848ad000    388K r-x-- libkrb5.so.3.3
+00007f778490e000    292K r---- libkrb5.so.3.3
+00007f7784957000      4K ----- libkrb5.so.3.3
+00007f7784958000     56K r---- libkrb5.so.3.3
+00007f7784966000      8K rw--- libkrb5.so.3.3
+00007f7784968000     12K r---- libtasn1.so.6.6.0
+00007f778496b000     48K r-x-- libtasn1.so.6.6.0
+00007f7784977000     16K r---- libtasn1.so.6.6.0
+00007f778497b000      4K ----- libtasn1.so.6.6.0
+00007f778497c000      4K r---- libtasn1.so.6.6.0
+00007f778497d000      4K rw--- libtasn1.so.6.6.0
+00007f778497e000    172K r---- libp11-kit.so.0.3.0
+00007f77849a9000    616K r-x-- libp11-kit.so.0.3.0
+00007f7784a43000    368K r---- libp11-kit.so.0.3.0
+00007f7784a9f000     44K r---- libp11-kit.so.0.3.0
+00007f7784aaa000     40K rw--- libp11-kit.so.0.3.0
+00007f7784ab4000    480K r---- libcrypto.so.1.1
+00007f7784b2c000   1644K r-x-- libcrypto.so.1.1
+00007f7784cc7000    580K r---- libcrypto.so.1.1
+00007f7784d58000    176K r---- libcrypto.so.1.1
+00007f7784d84000      8K rw--- libcrypto.so.1.1
+00007f7784d86000     16K rw---   [ anon ]
+00007f7784d8a000     40K r---- libgmp.so.10.4.0
+00007f7784d94000    384K r-x-- libgmp.so.10.4.0
+00007f7784df4000     92K r---- libgmp.so.10.4.0
+00007f7784e0b000      4K ----- libgmp.so.10.4.0
+00007f7784e0c000      4K r---- libgmp.so.10.4.0
+00007f7784e0d000      4K rw--- libgmp.so.10.4.0
+00007f7784e0e000     28K r---- libhogweed.so.5.0
+00007f7784e15000     64K r-x-- libhogweed.so.5.0
+00007f7784e25000    120K r---- libhogweed.so.5.0
+00007f7784e43000      4K r---- libhogweed.so.5.0
+00007f7784e44000      4K rw--- libhogweed.so.5.0
+00007f7784e45000     64K r---- libunistring.so.2.1.0
+00007f7784e55000    216K r-x-- libunistring.so.2.1.0
+00007f7784e8b000   1244K r---- libunistring.so.2.1.0
+00007f7784fc2000      4K ----- libunistring.so.2.1.0
+00007f7784fc3000     12K r---- libunistring.so.2.1.0
+00007f7784fc6000      4K rw--- libunistring.so.2.1.0
+00007f7784fc7000      8K r---- libz.so.1.2.11
+00007f7784fc9000     68K r-x-- libz.so.1.2.11
+00007f7784fda000     24K r---- libz.so.1.2.11
+00007f7784fe0000      4K ----- libz.so.1.2.11
+00007f7784fe1000      4K r---- libz.so.1.2.11
+00007f7784fe2000      4K rw--- libz.so.1.2.11
+00007f7784fe3000      4K r---- libbrotlidec.so.1.0.7
+00007f7784fe4000     32K r-x-- libbrotlidec.so.1.0.7
+00007f7784fec000     12K r---- libbrotlidec.so.1.0.7
+00007f7784fef000      4K r---- libbrotlidec.so.1.0.7
+00007f7784ff0000      4K rw--- libbrotlidec.so.1.0.7
+00007f7784ff1000     12K r---- liblber-2.4.so.2.10.12
+00007f7784ff4000     32K r-x-- liblber-2.4.so.2.10.12
+00007f7784ffc000     12K r---- liblber-2.4.so.2.10.12
+00007f7784fff000      4K ----- liblber-2.4.so.2.10.12
+00007f7785000000      4K r---- liblber-2.4.so.2.10.12
+00007f7785001000      4K rw--- liblber-2.4.so.2.10.12
+00007f7785002000     52K r---- libldap_r-2.4.so.2.10.12
+00007f778500f000    208K r-x-- libldap_r-2.4.so.2.10.12
+00007f7785043000     60K r---- libldap_r-2.4.so.2.10.12
+00007f7785052000      4K ----- libldap_r-2.4.so.2.10.12
+00007f7785053000      8K r---- libldap_r-2.4.so.2.10.12
+00007f7785055000      4K rw--- libldap_r-2.4.so.2.10.12
+00007f7785056000      8K rw---   [ anon ]
+00007f7785058000     44K r---- libgssapi_krb5.so.2.2
+00007f7785063000    200K r-x-- libgssapi_krb5.so.2.2
+00007f7785095000     48K r---- libgssapi_krb5.so.2.2
+00007f77850a1000      8K r---- libgssapi_krb5.so.2.2
+00007f77850a3000      8K rw--- libgssapi_krb5.so.2.2
+00007f77850a5000    188K r---- libgnutls.so.30.27.0
+00007f77850d4000   1160K r-x-- libgnutls.so.30.27.0
+00007f77851f6000    452K r---- libgnutls.so.30.27.0
+00007f7785267000      4K ----- libgnutls.so.30.27.0
+00007f7785268000     60K r---- libgnutls.so.30.27.0
+00007f7785277000      8K rw--- libgnutls.so.30.27.0
+00007f7785279000      8K rw---   [ anon ]
+00007f778527b000     36K r---- libnettle.so.7.0
+00007f7785284000    120K r-x-- libnettle.so.7.0
+00007f77852a2000     64K r---- libnettle.so.7.0
+00007f77852b2000      8K r---- libnettle.so.7.0
+00007f77852b4000      4K rw--- libnettle.so.7.0
+00007f77852b5000     52K r---- libssh.so.4.8.4
+00007f77852c2000    260K r-x-- libssh.so.4.8.4
+00007f7785303000    108K r---- libssh.so.4.8.4
+00007f778531e000      4K ----- libssh.so.4.8.4
+00007f778531f000      8K r---- libssh.so.4.8.4
+00007f7785321000      8K rw--- libssh.so.4.8.4
+00007f7785323000     20K r---- librtmp.so.1
+00007f7785328000     68K r-x-- librtmp.so.1
+00007f7785339000     28K r---- librtmp.so.1
+00007f7785340000      4K ----- librtmp.so.1
+00007f7785341000      4K r---- librtmp.so.1
+00007f7785342000      4K rw--- librtmp.so.1
+00007f7785343000      8K r---- libidn2.so.0.3.6
+00007f7785345000     20K r-x-- libidn2.so.0.3.6
+00007f778534a000     92K r---- libidn2.so.0.3.6
+00007f7785361000      4K ----- libidn2.so.0.3.6
+00007f7785362000      4K r---- libidn2.so.0.3.6
+00007f7785363000      4K rw--- libidn2.so.0.3.6
+00007f7785364000     20K r---- libnghttp2.so.14.19.0
+00007f7785369000     76K r-x-- libnghttp2.so.14.19.0
+00007f778537c000     52K r---- libnghttp2.so.14.19.0
+00007f7785389000     12K r---- libnghttp2.so.14.19.0
+00007f778538c000      4K rw--- libnghttp2.so.14.19.0
+00007f778538d000    420K r-x-- libopenal.so.1.16.0
+00007f77853f6000   2048K ----- libopenal.so.1.16.0
+00007f77855f6000     12K r---- libopenal.so.1.16.0
+00007f77855f9000      4K rw--- libopenal.so.1.16.0
+00007f77855fa000      8K rw---   [ anon ]
+00007f77855fc000   4176K r-x-- libsteamnetworkingsockets.so
+00007f7785a10000   2044K ----- libsteamnetworkingsockets.so
+00007f7785c0f000    148K r---- libsteamnetworkingsockets.so
+00007f7785c34000      8K rw--- libsteamnetworkingsockets.so
+00007f7785c36000     44K rw---   [ anon ]
+00007f7785c41000  39684K r-x-- libphonon.so
+00007f7788302000   2048K ----- libphonon.so
+00007f7788502000     76K r---- libphonon.so
+00007f7788515000   5332K rw--- libphonon.so
+00007f7788a4a000    324K rw---   [ anon ]
+00007f7788a9b000     48K r---- libcurl-gnutls.so.4.6.0
+00007f7788aa7000    392K r-x-- libcurl-gnutls.so.4.6.0
+00007f7788b09000    108K r---- libcurl-gnutls.so.4.6.0
+00007f7788b24000      4K ----- libcurl-gnutls.so.4.6.0
+00007f7788b25000     16K r---- libcurl-gnutls.so.4.6.0
+00007f7788b29000      4K rw--- libcurl-gnutls.so.4.6.0
+00007f7788b2a000  11440K r-x-- engine_client.so
+00007f7789656000   2048K ----- engine_client.so
+00007f7789856000    680K r---- engine_client.so
+00007f7789900000     80K rw--- engine_client.so
+00007f7789914000  54500K rw---   [ anon ]
+00007f778ce4d000     28K r--s- gconv-modules.cache
+00007f778ce54000      4K rw-s- nvidia0
+00007f778ce55000      4K rw-s- nvidia0
+00007f778ce56000      4K rw-s- nvidia0
+00007f778ce57000      4K rw-s- nvidiactl
+00007f778ce58000      4K r---- UTF-32.so
+00007f778ce59000      8K r-x-- UTF-32.so
+00007f778ce5b000      4K r---- UTF-32.so
+00007f778ce5c000      4K r---- UTF-32.so
+00007f778ce5d000      4K rw--- UTF-32.so
+00007f778ce5e000      8K r---- marlett.ttf
+00007f778ce60000      8K r---- marlett.ttf
+00007f778ce62000     24K r--s- be10afd2-4b53-487a-b518-35d280712643-le64.cache-7
+00007f778ce68000     24K r--s- da260d10-46f5-4a52-ba9d-953e91b30de8-le64.cache-7
+00007f778ce6e000      4K r--s- 725fdc72-9771-468e-84e3-94a2c9fae04a-le64.cache-7
+00007f778ce6f000     88K r--s- 01496f2b-0cb8-4926-a79c-76933fe012b3-le64.cache-7
+00007f778ce85000      4K r--s- e8e285de-1786-4324-a504-e7efa5a9923f-le64.cache-7
+00007f778ce86000      4K r--s- 1ee47de9-2e27-47e6-8ace-4422a0948b29-le64.cache-7
+00007f778ce87000      8K r--s- 466e468e-03da-4f11-b66c-dfcd9d9d2982-le64.cache-7
+00007f778ce89000      4K r--s- 50ed1ac4-0e06-4bab-8906-d532e0894218-le64.cache-7
+00007f778ce8a000      8K r--s- 49af6dd2-d8b4-41de-a9ca-164c51ed47f8-le64.cache-7
+00007f778ce8c000      8K r--s- a64514ca-d48d-4336-8d1f-e2e4828260bf-le64.cache-7
+00007f778ce8e000      4K r--s- 0ec7f47c-ba3a-4f84-8e33-b51a93db0a6f-le64.cache-7
+00007f778ce8f000      8K r--s- d419665c-b5e9-4568-85a5-da2637315bc6-le64.cache-7
+00007f778ce91000     20K r--s- d1d9f9a9-c4de-4d80-aa2c-b5c89c1e8da7-le64.cache-7
+00007f778ce96000      4K r--s- aa1e1cf0-6896-41f2-89d1-c78e9cf2b57a-le64.cache-7
+00007f778ce97000      4K r--s- 0d9173b8-b2ed-461e-9202-cdec1820882e-le64.cache-7
+00007f778ce98000      4K r--s- c50f4f0c-7823-4dbe-b8bf-2c90e97e6258-le64.cache-7
+00007f778ce99000      4K r--s- 09a32446-fa06-415d-9568-30a88efce8d3-le64.cache-7
+00007f778ce9a000      4K r--s- 9ba9325f-ab9c-4dde-9fb3-4a18cee7cd53-le64.cache-7
+00007f778ce9b000      4K r--s- c4a020df-e6c5-41ab-b36f-1c75d6dda204-le64.cache-7
+00007f778ce9c000      4K r--s- fcf7a424-c452-4172-80ea-b2a56f199625-le64.cache-7
+00007f778ce9d000      4K r--s- ab8ced37-040b-43c2-a8f1-39b2e2e53fad-le64.cache-7
+00007f778ce9e000      4K r--s- 3a7ea176-4972-44da-aae8-851e27b8d6c9-le64.cache-7
+00007f778ce9f000      4K r--s- 93cdfdf3-e838-45c9-889f-fdefcf762a33-le64.cache-7
+00007f778cea0000      4K r--s- 6641d2f4-7ddb-42c1-b955-6874fb69aa7a-le64.cache-7
+00007f778cea1000     20K r--s- 819e6391-18ae-47ba-8425-987aacbb3aa2-le64.cache-7
+00007f778cea6000     28K r--s- feabc5fa-ab72-458e-8c0a-d931c686a2d7-le64.cache-7
+00007f778cead000      4K r--s- e9416b11-4117-4124-b91b-d89e12e75dae-le64.cache-7
+00007f778ceae000      4K r--s- 5695ca1e-0dfa-4938-b7eb-de237bd5f840-le64.cache-7
+00007f778ceaf000     24K r--s- 0b92ef5e-8818-4f82-a111-e67f2bb65d16-le64.cache-7
+00007f778ceb5000     76K r--s- 9e5b5ccd-f5eb-4570-a7a2-ec1cf7e9b7f7-le64.cache-7
+00007f778cec8000     16K r--s- cd12dc59-c886-4a74-a441-50138fdad542-le64.cache-7
+00007f778cecc000      4K r--s- 3143b314-a454-4a06-8a91-cd94f3972796-le64.cache-7
+00007f778cecd000      4K r--s- e3ce8400-7161-4a4c-832e-3a9f60ab89da-le64.cache-7
+00007f778cece000      4K r--s- 3bdbea79-3fe7-4414-9cf2-92ce5d5607be-le64.cache-7
+00007f778cecf000      4K r--s- ed8545d7-7dc3-480c-8bbf-edd1fabaa445-le64.cache-7
+00007f778ced0000     12K r--s- 02bc2b4e-d4b1-4c77-b2e3-cec6a2d5520a-le64.cache-7
+00007f778ced3000      8K r--s- 7111f99e-e629-4c25-a113-b52368b00ad6-le64.cache-7
+00007f778ced5000     12K r--s- c19814c6-3fe7-4cbd-b00f-6c5caa611b24-le64.cache-7
+00007f778ced8000      4K r--s- 6c072f89-b5ea-4b52-9dda-d17f2a9daa0f-le64.cache-7
+00007f778ced9000     48K r--s- 61ba1c3e-3485-420c-9f5e-372425fdb6bc-le64.cache-7
+00007f778cee5000      4K r--s- 961e0d14-e891-4af1-b38a-87ca377f3749-le64.cache-7
+00007f778cee6000      4K r--s- cc01e806-2240-48b7-81f0-e7b2f9e04f3c-le64.cache-7
+00007f778cee7000      4K r--s- 4837e207-d041-4e20-ade2-2c9b0ab538c8-le64.cache-7
+00007f778cee8000      4K r--s- decf7c08-a59e-4fe0-b5ee-d0ad49e7ad43-le64.cache-7
+00007f778cee9000      4K r--s- 5e6020d2-c57a-48de-8fb9-9d7e736320d3-le64.cache-7
+00007f778ceea000      4K r--s- 953d5fd2-4b0b-438d-9048-13358cab3f7d-le64.cache-7
+00007f778ceeb000      4K r--s- c2243f64-6105-4abc-b7c4-c1461a4c5e99-le64.cache-7
+00007f778ceec000     56K r--s- 953233bf-65de-43c2-9ad0-ba99d88df0c0-le64.cache-7
+00007f778cefa000     64K r--s- 6209a900-ecc9-4b19-95c1-9c9ae84f65ed-le64.cache-7
+00007f778cf0a000     12K r--s- 32acce8e-7942-4479-8d7b-0808f9df3b7f-le64.cache-7
+00007f778cf0d000    144K r--s- 27d93661-666b-4f61-9d99-3cd0c722d538-le64.cache-7
+00007f778cf31000     92K r--s- 4e0edd03814ff9fb3c010ec013b25d10-le64.cache-4
+00007f778cf48000     64K r--s- 9b89f8e3dae116d678bbf48e5f21f69b-le64.cache-4
+00007f778cf58000    512K rw-s- nvidiactl
+00007f778cfd8000     76K rw-s- nvidiactl
+00007f778cfeb000      4K rw-s- nvidia0
+00007f778cfec000      8K rw-s- nvidiactl
+00007f778cfee000     16K rw-s- nvidiactl
+00007f778cff2000      4K rw-s- nvidia0
+00007f778cff3000      4K rw-s- nvidia0
+00007f778cff4000      4K rw-s- nvidia0
+00007f778cff5000      4K rw-s- nvidiactl
+00007f778cff6000      4K rw-s- nvidiactl
+00007f778cff7000    256K rw-s- nvidiactl
+00007f778d037000    128K rw-s- nvidiactl
+00007f778d057000    256K rw-s- nvidiactl
+00007f778d097000    128K rw-s- nvidiactl
+00007f778d0b7000    256K rw-s- nvidiactl
+00007f778d0f7000      4K r--s- 0bd3dc0958fa2205aaaa8ebb13e2872b-le64.cache-4
+00007f778d0f8000      8K r---- libcom_err.so.2.1
+00007f778d0fa000      8K r-x-- libcom_err.so.2.1
+00007f778d0fc000      4K r---- libcom_err.so.2.1
+00007f778d0fd000      4K r---- libcom_err.so.2.1
+00007f778d0fe000      4K rw--- libcom_err.so.2.1
+00007f778d0ff000      8K r---- libpsl.so.5.3.2
+00007f778d101000      8K r-x-- libpsl.so.5.3.2
+00007f778d103000     52K r---- libpsl.so.5.3.2
+00007f778d110000      4K r---- libpsl.so.5.3.2
+00007f778d111000      4K rw--- libpsl.so.5.3.2
+00007f778d112000      4K rw-s- nvidiactl
+00007f778d113000      4K rw-s- nvidiactl
+00007f778d114000      4K rw-s- .nvidia_drv.XXXXXX (deleted)
+00007f778d115000      8K rw-s- .glXXXXXX (deleted)
+00007f778d117000      4K rw-s- nvidiactl
+00007f778d118000   1684K rw-s- .nvidia_drv.XXXXXX (deleted)
+00007f778d2bd000     20K r---- libdrm.so.2.4.0
+00007f778d2c2000     44K r-x-- libdrm.so.2.4.0
+00007f778d2cd000     16K r---- libdrm.so.2.4.0
+00007f778d2d1000      4K r---- libdrm.so.2.4.0
+00007f778d2d2000      4K rw--- libdrm.so.2.4.0
+00007f778d2d3000     44K r---- libxcb-glx.so.0.0.0
+00007f778d2de000     36K r-x-- libxcb-glx.so.0.0.0
+00007f778d2e7000     20K r---- libxcb-glx.so.0.0.0
+00007f778d2ec000      4K ----- libxcb-glx.so.0.0.0
+00007f778d2ed000      8K r---- libxcb-glx.so.0.0.0
+00007f778d2ef000      4K rw--- libxcb-glx.so.0.0.0
+00007f778d2f0000      4K -----   [ anon ]
+00007f778d2f1000   8192K rw---   [ anon ]
+00007f778daf1000  18992K r-x-- libnvidia-glcore.so.510.73.05
+00007f778ed7d000    132K rwx-- libnvidia-glcore.so.510.73.05
+00007f778ed9e000   8328K r-x-- libnvidia-glcore.so.510.73.05
+00007f778f5c0000   2044K ----- libnvidia-glcore.so.510.73.05
+00007f778f7bf000   5548K r---- libnvidia-glcore.so.510.73.05
+00007f778fd2a000    420K rw--- libnvidia-glcore.so.510.73.05
+00007f778fd93000    136K rw---   [ anon ]
+00007f778fdb5000     12K r-x-- libnvidia-tls.so.510.73.05
+00007f778fdb8000   2048K ----- libnvidia-tls.so.510.73.05
+00007f778ffb8000      4K r---- libnvidia-tls.so.510.73.05
+00007f778ffb9000      4K rw--- libnvidia-tls.so.510.73.05
+00007f778ffba000    448K r-x-- libnvidia-glsi.so.510.73.05
+00007f779002a000   2044K ----- libnvidia-glsi.so.510.73.05
+00007f7790229000    164K r---- libnvidia-glsi.so.510.73.05
+00007f7790252000      4K rw--- libnvidia-glsi.so.510.73.05
+00007f7790253000     28K rw---   [ anon ]
+00007f779025a000    716K r-x-- libGLX_nvidia.so.510.73.05
+00007f779030d000    212K rwx-- libGLX_nvidia.so.510.73.05
+00007f7790342000     28K r-x-- libGLX_nvidia.so.510.73.05
+00007f7790349000   2044K ----- libGLX_nvidia.so.510.73.05
+00007f7790548000    292K r---- libGLX_nvidia.so.510.73.05
+00007f7790591000     20K rw--- libGLX_nvidia.so.510.73.05
+00007f7790596000      8K rw---   [ anon ]
+00007f7790598000     16K r---- libgpg-error.so.0.28.0
+00007f779059c000     76K r-x-- libgpg-error.so.0.28.0
+00007f77905af000     40K r---- libgpg-error.so.0.28.0
+00007f77905b9000      4K r---- libgpg-error.so.0.28.0
+00007f77905ba000      4K rw--- libgpg-error.so.0.28.0
+00007f77905bb000     48K r---- libgcrypt.so.20.2.5
+00007f77905c7000    824K r-x-- libgcrypt.so.20.2.5
+00007f7790695000    244K r---- libgcrypt.so.20.2.5
+00007f77906d2000      8K r---- libgcrypt.so.20.2.5
+00007f77906d4000     20K rw--- libgcrypt.so.20.2.5
+00007f77906d9000      8K r---- liblz4.so.1.9.2
+00007f77906db000    104K r-x-- liblz4.so.1.9.2
+00007f77906f5000     12K r---- liblz4.so.1.9.2
+00007f77906f8000      4K r---- liblz4.so.1.9.2
+00007f77906f9000      4K rw--- liblz4.so.1.9.2
+00007f77906fa000     12K r---- liblzma.so.5.2.4
+00007f77906fd000     96K r-x-- liblzma.so.5.2.4
+00007f7790715000     44K r---- liblzma.so.5.2.4
+00007f7790720000      4K ----- liblzma.so.5.2.4
+00007f7790721000      4K r---- liblzma.so.5.2.4
+00007f7790722000      4K rw--- liblzma.so.5.2.4
+00007f7790723000     64K r---- libsystemd.so.0.28.0
+00007f7790733000    468K r-x-- libsystemd.so.0.28.0
+00007f77907a8000    148K r---- libsystemd.so.0.28.0
+00007f77907cd000     12K r---- libsystemd.so.0.28.0
+00007f77907d0000      4K rw--- libsystemd.so.0.28.0
+00007f77907d1000      4K rw---   [ anon ]
+00007f77907d2000     44K r---- libdbus-1.so.3.19.11
+00007f77907dd000    184K r-x-- libdbus-1.so.3.19.11
+00007f779080b000     84K r---- libdbus-1.so.3.19.11
+00007f7790820000      4K ----- libdbus-1.so.3.19.11
+00007f7790821000      4K r---- libdbus-1.so.3.19.11
+00007f7790822000      4K rw--- libdbus-1.so.3.19.11
+00007f7790823000      4K r---- libXxf86vm.so.1.0.0
+00007f7790824000     12K r-x-- libXxf86vm.so.1.0.0
+00007f7790827000      4K r---- libXxf86vm.so.1.0.0
+00007f7790828000      4K r---- libXxf86vm.so.1.0.0
+00007f7790829000      4K rw--- libXxf86vm.so.1.0.0
+00007f779082a000      4K r---- libXss.so.1.0.0
+00007f779082b000      4K r-x-- libXss.so.1.0.0
+00007f779082c000      4K r---- libXss.so.1.0.0
+00007f779082d000      4K r---- libXss.so.1.0.0
+00007f779082e000      4K rw--- libXss.so.1.0.0
+00007f779082f000      8K r---- libXrandr.so.2.2.0
+00007f7790831000     28K r-x-- libXrandr.so.2.2.0
+00007f7790838000      8K r---- libXrandr.so.2.2.0
+00007f779083a000      4K r---- libXrandr.so.2.2.0
+00007f779083b000      4K rw--- libXrandr.so.2.2.0
+00007f779083c000      8K r---- libXi.so.6.1.0
+00007f779083e000     44K r-x-- libXi.so.6.1.0
+00007f7790849000     12K r---- libXi.so.6.1.0
+00007f779084c000      4K r---- libXi.so.6.1.0
+00007f779084d000      4K rw--- libXi.so.6.1.0
+00007f779084e000      4K r---- libXinerama.so.1.0.0
+00007f779084f000      4K r-x-- libXinerama.so.1.0.0
+00007f7790850000      4K r---- libXinerama.so.1.0.0
+00007f7790851000      4K r---- libXinerama.so.1.0.0
+00007f7790852000      4K rw--- libXinerama.so.1.0.0
+00007f7790853000      8K r---- libXfixes.so.3.1.0
+00007f7790855000     12K r-x-- libXfixes.so.3.1.0
+00007f7790858000      4K r---- libXfixes.so.3.1.0
+00007f7790859000      4K r---- libXfixes.so.3.1.0
+00007f779085a000      4K rw--- libXfixes.so.3.1.0
+00007f779085b000     36K r-x-- libXrender.so.1.3.0
+00007f7790864000   2044K ----- libXrender.so.1.3.0
+00007f7790a63000      4K r---- libXrender.so.1.3.0
+00007f7790a64000      4K rw--- libXrender.so.1.3.0
+00007f7790a65000     12K r---- libXcursor.so.1.0.2
+00007f7790a68000     24K r-x-- libXcursor.so.1.0.2
+00007f7790a6e000      8K r---- libXcursor.so.1.0.2
+00007f7790a70000      4K r---- libXcursor.so.1.0.2
+00007f7790a71000      4K rw--- libXcursor.so.1.0.2
+00007f7790a72000     16K r---- libXext.so.6.4.0
+00007f7790a76000     44K r-x-- libXext.so.6.4.0
+00007f7790a81000     16K r---- libXext.so.6.4.0
+00007f7790a85000      4K r---- libXext.so.6.4.0
+00007f7790a86000      4K rw--- libXext.so.6.4.0
+00007f7790a87000      4K -----   [ anon ]
+00007f7790a88000   1024K rw---   [ anon ]
+00007f7790b88000      4K -----   [ anon ]
+00007f7790b89000   1024K rw---   [ anon ]
+00007f7790c89000      4K -----   [ anon ]
+00007f7790c8a000   1024K rw---   [ anon ]
+00007f7790d8a000      4K -----   [ anon ]
+00007f7790d8b000   8192K rw---   [ anon ]
+00007f779158b000    724K r-x-- filesystem_stdio_client.so
+00007f7791640000   2048K ----- filesystem_stdio_client.so
+00007f7791840000     28K r---- filesystem_stdio_client.so
+00007f7791847000      8K rw--- filesystem_stdio_client.so
+00007f7791849000     92K rw---   [ anon ]
+00007f7791860000   5568K r---- locale-archive
+00007f7791dd0000   1412K r-x-- libSDL2-2.0.so.0
+00007f7791f31000   2044K ----- libSDL2-2.0.so.0
+00007f7792130000     24K r---- libSDL2-2.0.so.0
+00007f7792136000     24K rw--- libSDL2-2.0.so.0
+00007f779213c000     20K rw---   [ anon ]
+00007f7792141000    692K r-x-- libtogl_client.so
+00007f77921ee000   2044K ----- libtogl_client.so
+00007f77923ed000     48K r---- libtogl_client.so
+00007f77923f9000     24K rw--- libtogl_client.so
+00007f77923ff000   4572K rw---   [ anon ]
+00007f7792876000    320K r-x-- libsteam_api.so
+00007f77928c6000      8K r---- libsteam_api.so
+00007f77928c8000      4K rw--- libsteam_api.so
+00007f77928c9000     76K rw---   [ anon ]
+00007f77928dc000    320K r-x-- libvstdlib_client.so
+00007f779292c000   2044K ----- libvstdlib_client.so
+00007f7792b2b000     16K r---- libvstdlib_client.so
+00007f7792b2f000      4K rw--- libvstdlib_client.so
+00007f7792b30000     40K rw---   [ anon ]
+00007f7792b3a000    180K r-x-- libtier0_client.so
+00007f7792b67000   2044K ----- libtier0_client.so
+00007f7792d66000      4K r---- libtier0_client.so
+00007f7792d67000      4K rw--- libtier0_client.so
+00007f7792d68000     56K rw---   [ anon ]
+00007f7792d76000    376K r-x-- launcher_client.so
+00007f7792dd4000   2048K ----- launcher_client.so
+00007f7792fd4000     12K r---- launcher_client.so
+00007f7792fd7000      4K rw--- launcher_client.so
+00007f7792fd8000     84K rw---   [ anon ]
+00007f7792fed000    196K rw-s- u1000-Shm_696c9228
+00007f779301e000  16388K rw-s- u1000-Shm_222d77b6
+00007f779401f000   1028K rw-s- u1000-Shm_f2bd5c08
+00007f7794120000    516K rw-s- u1000-Shm_debf43f1
+00007f77941a1000   2048K rw-s- u1000-ValveIPCSharedObj-Steam
+00007f77943a1000     28K rw---   [ anon ]
+00007f77943a8000     16K r---- libbsd.so.0.10.0
+00007f77943ac000     60K r-x-- libbsd.so.0.10.0
+00007f77943bb000     12K r---- libbsd.so.0.10.0
+00007f77943be000      4K ----- libbsd.so.0.10.0
+00007f77943bf000      4K r---- libbsd.so.0.10.0
+00007f77943c0000      4K rw--- libbsd.so.0.10.0
+00007f77943c1000      4K rw---   [ anon ]
+00007f77943c2000      8K r---- libXdmcp.so.6.0.0
+00007f77943c4000      8K r-x-- libXdmcp.so.6.0.0
+00007f77943c6000      8K r---- libXdmcp.so.6.0.0
+00007f77943c8000      4K r---- libXdmcp.so.6.0.0
+00007f77943c9000      4K rw--- libXdmcp.so.6.0.0
+00007f77943ca000      8K rw---   [ anon ]
+00007f77943cc000      4K r---- libXau.so.6.0.0
+00007f77943cd000      8K r-x-- libXau.so.6.0.0
+00007f77943cf000      4K r---- libXau.so.6.0.0
+00007f77943d0000      4K r---- libXau.so.6.0.0
+00007f77943d1000      4K rw--- libXau.so.6.0.0
+00007f77943d2000     44K r---- libxcb.so.1.1.0
+00007f77943dd000     80K r-x-- libxcb.so.1.1.0
+00007f77943f1000     36K r---- libxcb.so.1.1.0
+00007f77943fa000      4K r---- libxcb.so.1.1.0
+00007f77943fb000      4K rw--- libxcb.so.1.1.0
+00007f77943fc000     96K r---- libX11.so.6.3.0
+00007f7794414000    556K r-x-- libX11.so.6.3.0
+00007f779449f000    592K r---- libX11.so.6.3.0
+00007f7794533000      4K ----- libX11.so.6.3.0
+00007f7794534000      4K r---- libX11.so.6.3.0
+00007f7794535000     16K rw--- libX11.so.6.3.0
+00007f7794539000     12K r---- libGLX.so.0.0.0
+00007f779453c000    108K r-x-- libGLX.so.0.0.0
+00007f7794557000     16K r---- libGLX.so.0.0.0
+00007f779455b000      4K r---- libGLX.so.0.0.0
+00007f779455c000      4K rw--- libGLX.so.0.0.0
+00007f779455d000     64K rw---   [ anon ]
+00007f779456d000    256K r---- libGLdispatch.so.0.0.0
+00007f77945ad000     12K r-x-- libGLdispatch.so.0.0.0
+00007f77945b0000    236K r-x-- libGLdispatch.so.0.0.0
+00007f77945eb000      4K r-x-- libGLdispatch.so.0.0.0
+00007f77945ec000     80K r---- libGLdispatch.so.0.0.0
+00007f7794600000    112K r---- libGLdispatch.so.0.0.0
+00007f779461c000      4K rw--- libGLdispatch.so.0.0.0
+00007f779461d000     40K rw---   [ anon ]
+00007f7794627000     12K r---- libgcc_s.so.1
+00007f779462a000     72K r-x-- libgcc_s.so.1
+00007f779463c000     16K r---- libgcc_s.so.1
+00007f7794640000      4K r---- libgcc_s.so.1
+00007f7794641000      4K rw--- libgcc_s.so.1
+00007f7794642000     52K r---- libm-2.31.so
+00007f779464f000    668K r-x-- libm-2.31.so
+00007f77946f6000    612K r---- libm-2.31.so
+00007f779478f000      4K r---- libm-2.31.so
+00007f7794790000      4K rw--- libm-2.31.so
+00007f7794791000    268K r---- libGL.so.1.7.0
+00007f77947d4000     16K r-x-- libGL.so.1.7.0
+00007f77947d8000    108K r-x-- libGL.so.1.7.0
+00007f77947f3000      4K r-x-- libGL.so.1.7.0
+00007f77947f4000     84K r---- libGL.so.1.7.0
+00007f7794809000     56K r---- libGL.so.1.7.0
+00007f7794817000      4K rw--- libGL.so.1.7.0
+00007f7794818000      4K rw---   [ anon ]
+00007f7794819000      8K r---- librt-2.31.so
+00007f779481b000     16K r-x-- librt-2.31.so
+00007f779481f000      8K r---- librt-2.31.so
+00007f7794821000      4K r---- librt-2.31.so
+00007f7794822000      4K rw--- librt-2.31.so
+00007f7794823000     24K r---- libpthread-2.31.so
+00007f7794829000     68K r-x-- libpthread-2.31.so
+00007f779483a000     24K r---- libpthread-2.31.so
+00007f7794840000      4K r---- libpthread-2.31.so
+00007f7794841000      4K rw--- libpthread-2.31.so
+00007f7794842000     16K rw---   [ anon ]
+00007f7794846000    600K r---- libstdc++.so.6.0.28
+00007f77948dc000    964K r-x-- libstdc++.so.6.0.28
+00007f77949cd000    292K r---- libstdc++.so.6.0.28
+00007f7794a16000      4K ----- libstdc++.so.6.0.28
+00007f7794a17000     44K r---- libstdc++.so.6.0.28
+00007f7794a22000     12K rw--- libstdc++.so.6.0.28
+00007f7794a25000     12K rw---   [ anon ]
+00007f7794a28000    136K r---- libc-2.31.so
+00007f7794a4a000   1504K r-x-- libc-2.31.so
+00007f7794bc2000    312K r---- libc-2.31.so
+00007f7794c10000     16K r---- libc-2.31.so
+00007f7794c14000      8K rw--- libc-2.31.so
+00007f7794c16000     24K rw---   [ anon ]
+00007f7794c1c000      4K r---- libdl-2.31.so
+00007f7794c1d000      8K r-x-- libdl-2.31.so
+00007f7794c1f000      4K r---- libdl-2.31.so
+00007f7794c20000      4K r---- libdl-2.31.so
+00007f7794c21000      4K rw--- libdl-2.31.so
+00007f7794c22000    148K r-x-- libtcmalloc_minimal.so.0
+00007f7794c47000   2044K ----- libtcmalloc_minimal.so.0
+00007f7794e46000      4K r---- libtcmalloc_minimal.so.0
+00007f7794e47000      4K rw--- libtcmalloc_minimal.so.0
+00007f7794e48000   1740K rw---   [ anon ]
+00007f7794ffb000    644K r-x-- gameoverlayrenderer.so
+00007f779509c000      4K ----- gameoverlayrenderer.so
+00007f779509d000     12K r---- gameoverlayrenderer.so
+00007f77950a0000      4K rw--- gameoverlayrenderer.so
+00007f77950a1000     24K rw---   [ anon ]
+00007f77950a7000      4K r---- ld-2.31.so
+00007f77950a8000    140K r-x-- ld-2.31.so
+00007f77950cb000     32K r---- ld-2.31.so
+00007f77950d3000      4K rw-s- .nvidia_drv.XXXXXX (deleted)
+00007f77950d4000      4K r---- ld-2.31.so
+00007f77950d5000      4K rw--- ld-2.31.so
+00007f77950d6000      4K rw---   [ anon ]
+00007fffc88b7000   1184K rw---   [ stack ]
+00007fffc89e8000     16K r----   [ anon ]
+00007fffc89ec000      8K r-x--   [ anon ]
+ffffffffff600000      4K --x--   [ anon ]
+ total          5982236K
