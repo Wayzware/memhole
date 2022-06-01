@@ -1,11 +1,16 @@
 /*
     Wrapper for Memhole
-    wrapper version: 1.1
+    wrapper version: 1.2 for Memhole v1.0 and 1.1
 
     This header file allows for easy use of memhole in any C/C++ program
 */
 
+#ifndef MEMHOLE_WRAPPER_H
+#define MEMHOLE_WRAPPER_H
+
+#ifndef _LARGEFILE64_SOURCE
 #define _LARGEFILE64_SOURCE
+#endif
 #include <sys/types.h>
 #include <unistd.h>
 #include <fcntl.h>
@@ -30,7 +35,7 @@ struct __memhole_dev_t{
 // connects a memhole_t to the memhole kernel module
 // note: only 1 connection is allowed at a time
 // returns an error code or 0 upon success
- int connect_memhole(memhole_t* memhole){
+inline int connect_memhole(memhole_t* memhole){
     if(memhole == NULL) return -EINVDEV;
     if(access(MEMHOLE_PATH, F_OK)) return -EMEMHNF;
     int ret = open(MEMHOLE_PATH, O_RDWR);
@@ -43,7 +48,7 @@ struct __memhole_dev_t{
 
 // disconnects a memhole_t from the memhole kernel module
 // returns an error code or 0 upon success
- int disconnect_memhole(memhole_t* memhole){
+inline int disconnect_memhole(memhole_t* memhole){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd == 0) return -EINVDEV;
     return close(memhole->fd);
@@ -51,7 +56,7 @@ struct __memhole_dev_t{
 
 // attach memhole to pid's memory
 // returns an error code or 0 upon success
- long attach_to_pid(memhole_t* memhole, int pid, unsigned long* base_pointer){
+inline long attach_to_pid(memhole_t* memhole, int pid){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd <= 0) return -EINVDEV;
     if(kill(pid, 0)) return -EINVPID;
@@ -60,14 +65,13 @@ struct __memhole_dev_t{
     if(ret == 0){
         return -EINVPID;
     }
-    *base_pointer = ret;
     return 0;
 }
 
 // set the memory position to start reading/writing from
 // NOTE: the pos is NOT automatically incremented after a read/write
 // returns an error code or the memory address seeked to
- long set_memory_position(memhole_t* memhole, void* pos){
+inline long set_memory_position(memhole_t* memhole, void* pos){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd <= 0) return -EINVDEV;
     return lseek64(memhole->fd, (long) pos, LSMSPOS);
@@ -75,7 +79,7 @@ struct __memhole_dev_t{
 
 // get the memory position currently used for reading/writing from
 // returns an error code or the memory address requested
- long get_memory_position(memhole_t* memhole){
+inline long get_memory_position(memhole_t* memhole){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd <= 0) return -EINVDEV;
 
@@ -85,7 +89,7 @@ struct __memhole_dev_t{
 // read memory starting at the pos set with set_memory_position()
 // NOTE: the pos is NOT automatically incremented after a read/write
 // returns an error code or number of bytes read
- long read_memory(memhole_t* memhole, char* buf, long len){
+inline long read_memory(memhole_t* memhole, char* buf, long len){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd <= 0) return -EINVDEV;
 
@@ -95,9 +99,11 @@ struct __memhole_dev_t{
 // write memory starting at the pos set with set_memory_position()
 // NOTE: the pos is NOT automatically incremented after a read/write
 // returns an error code or number of bytes read
- long write_memory(memhole_t* memhole, char* buf, long len){
+inline long write_memory(memhole_t* memhole, char* buf, long len){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd <= 0) return -EINVDEV;
 
     return write(memhole->fd, buf, len);
 }
+
+#endif
