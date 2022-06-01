@@ -1,7 +1,5 @@
 #include "memhole.h"
 
-#define MEMHOLE_VERSION "1.0.0"
-
 int memhole_major = 250;
 int memhole_minor = 0;
 
@@ -63,23 +61,30 @@ static loff_t memhole_llseek(struct file* filp, loff_t addr, int m){
 
 static ssize_t memhole_read(struct file* filp, char __user *buf, size_t len, loff_t *f_pos){
     int bytes;
-    printk( KERN_NOTICE "MEMHOLE: reading %ld bytes to %p\n", len, buf);
-    printkn("stac()ing\n");
-    stac();
-    bytes = access_process_vm(proc_task, address, (void*) buf, len, 0);
-    printkn("clac()ing\n");
-    clac();
+    char* buffer;
+    printk( KERN_NOTICE "MEMHOLE: reading %ld bytes from %p to %p\n", len, address, buf);
+    if(buf == NULL) return -1;
+    buffer = kmalloc(len, GFP_KERNEL);
+    bytes = access_process_vm(proc_task, (unsigned long) address, (void*) buffer, len, 0);
+    if(copy_to_user(buf, buffer, bytes)){
+        kfree(buffer);
+        return -1;
+    }
+    kfree(buffer);
     return bytes;
 }
 
 static ssize_t memhole_write(struct file* filp, const char __user *buf, size_t len, loff_t *f_pos){
     int bytes;
-    printk( KERN_NOTICE "MEMHOLE: writing %ld bytes to %p\n", len, buf);
-    printkn("stac()ing\n");
-    stac();
-    bytes = access_process_vm(proc_task, address, (void*) buf, len, FOLL_WRITE);
-    printkn("clac()ing\n");
-    clac();
+    char* buffer;
+    printk( KERN_NOTICE "MEMHOLE: writing %ld bytes from %p to %p\n", len, buf, address);
+    if(buf == NULL) return -1;
+    buffer = kmalloc(len, GFP_KERNEL);
+    if(copy_from_user(buffer, buf, len)){
+        kfree(buffer);
+        return -1;
+    }
+    bytes = access_process_vm(proc_task, (unsigned long) address, (void*) buffer, len, FOLL_WRITE);
     return bytes;
 }
 
