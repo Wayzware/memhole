@@ -13,6 +13,7 @@ int status = 0;
 struct task_struct* proc_task = NULL;
 int nr_pages = 0;
 
+char* buffer = NULL;
 
 module_param(memhole_major, int, S_IRUGO);
 module_param(memhole_minor, int, S_IRUGO);
@@ -27,7 +28,7 @@ static int memhole_open(struct inode *inode, struct file* filp){
     }
     return 0;
 }
-//123652
+
 static int memhole_close(struct inode* inode, struct file* filp){
     printkn("device closed\n");
     up(&dev_sem);
@@ -50,8 +51,15 @@ static loff_t memhole_llseek(struct file* filp, loff_t addr, int m){
     }
     else if(m == LSMSPOS){
         address = (char*) addr;
-        printk(KERN_NOTICE "MEMHOLE: seeking to: %p\n", address);
+        //printk(KERN_NOTICE "MEMHOLE: seeking to: %p\n", address);
         return (loff_t) address;
+    }
+    else if(m == LSMSBUF){
+        if(buffer){
+            kfree(buffer);
+        }
+        buffer = kmalloc((long) addr, GFP_KERNEL);
+        return !buffer;
     }
 
     printkw("tried to seek using an invalid mode");
@@ -61,27 +69,20 @@ static loff_t memhole_llseek(struct file* filp, loff_t addr, int m){
 
 static ssize_t memhole_read(struct file* filp, char __user *buf, size_t len, loff_t *f_pos){
     int bytes;
-    char* buffer;
-    printk( KERN_NOTICE "MEMHOLE: reading %ld bytes from %p to %p\n", len, address, buf);
-    if(buf == NULL) return -1;
-    buffer = kmalloc(len, GFP_KERNEL);
+    //printk(KERN_NOTICE "MEMHOLE: reading %ld bytes from %p to %p\n", len, address, buf);
+    if(!buf || !buffer) return -1;
     bytes = access_process_vm(proc_task, (unsigned long) address, (void*) buffer, len, 0);
     if(copy_to_user(buf, buffer, bytes)){
-        kfree(buffer);
         return -1;
     }
-    kfree(buffer);
     return bytes;
 }
 
 static ssize_t memhole_write(struct file* filp, const char __user *buf, size_t len, loff_t *f_pos){
     int bytes;
-    char* buffer;
-    printk( KERN_NOTICE "MEMHOLE: writing %ld bytes from %p to %p\n", len, buf, address);
-    if(buf == NULL) return -1;
-    buffer = kmalloc(len, GFP_KERNEL);
+    //printk( KERN_NOTICE "MEMHOLE: writing %ld bytes from %p to %p\n", len, buf, address);
+    if(!buf || !buffer) return -1;
     if(copy_from_user(buffer, buf, len)){
-        kfree(buffer);
         return -1;
     }
     bytes = access_process_vm(proc_task, (unsigned long) address, (void*) buffer, len, FOLL_WRITE);
@@ -99,7 +100,6 @@ const struct file_operations memhole_fops = {
 
 int memhole_init(void){
     printk(KERN_NOTICE "MEMHOLE: init version %s", MEMHOLE_VERSION);
-    //printkn("init begin\n");
     sema_init(&dev_sem, 1);
     sema_init(&status_sem, 1);
 

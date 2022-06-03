@@ -24,11 +24,12 @@
 
 #include <asm/smap.h>
 
-#define MEMHOLE_VERSION "1.1.0"
+#define MEMHOLE_VERSION "1.2.0"
 
 #define LSMSPID 0
-#define LSMSPOS 3
-#define LSMGPOS 4
+#define LSMSPOS 1
+#define LSMGPOS 2
+#define LSMSBUF 3
 
 #define printkn(x) printk( KERN_NOTICE "MEMHOLE: %s", x)
 #define printkw(x) printk( KERN_WARNING "MEMHOLE: %s", x)

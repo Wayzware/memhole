@@ -15,6 +15,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <signal.h>
+#include <semaphore.h>
 
 // Error codes
 #define EINVDEV 4   // invalid memhole device
@@ -23,8 +24,8 @@
 #define EINVPID 32  // could not find pid
 
 #define LSMSPID 0   // lseek mode set pid
-#define LSMSPOS 3   // lseek mode set pos
-#define LSMGPOS 4   // lseek mode get pos
+#define LSMSPOS 1   // lseek mode set pos
+#define LSMGPOS 2   // lseek mode get pos
 
 #define MEMHOLE_PATH "/dev/memhole"
 
