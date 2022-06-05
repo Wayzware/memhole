@@ -24,7 +24,7 @@
 
 #include <asm/smap.h>
 
-#define MEMHOLE_VERSION "1.2.0"
+#define MEMHOLE_VERSION "1.2.1"
 
 #define LSMSPID 0
 #define LSMSPOS 1

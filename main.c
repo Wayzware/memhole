@@ -27,7 +27,8 @@ static int memhole_open(struct inode *inode, struct file* filp){
 
 static int memhole_close(struct inode* inode, struct file* filp){
     //printkn("device closed\n");
-    kfree(buffer);
+    if(buffer) kfree(buffer);
+    buffer = NULL;
     up(&dev_sem);
     return 0;
 }
