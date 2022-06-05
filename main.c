@@ -1,17 +1,13 @@
 #include "memhole.h"
 
-int memhole_major = 250;
+int memhole_major = 0;
 int memhole_minor = 0;
 
 char* address = 0;
 
 struct semaphore dev_sem = {};
 
-struct semaphore status_sem = {};
-int status = 0;
-
 struct task_struct* proc_task = NULL;
-int nr_pages = 0;
 
 char* buffer = NULL;
 
@@ -22,7 +18,7 @@ MODULE_AUTHOR("Jacob Rice");
 MODULE_LICENSE("Dual BSD/GPL"); //fake news, ill sue you if you use this without my permission xd
 
 static int memhole_open(struct inode *inode, struct file* filp){
-    printkn("device opened\n");
+    //printkn("device opened\n");
     if(down_trylock(&dev_sem)){
         return 1;
     }
@@ -30,7 +26,8 @@ static int memhole_open(struct inode *inode, struct file* filp){
 }
 
 static int memhole_close(struct inode* inode, struct file* filp){
-    printkn("device closed\n");
+    //printkn("device closed\n");
+    kfree(buffer);
     up(&dev_sem);
     return 0;
 }
@@ -101,7 +98,6 @@ const struct file_operations memhole_fops = {
 int memhole_init(void){
     printk(KERN_NOTICE "MEMHOLE: init version %s", MEMHOLE_VERSION);
     sema_init(&dev_sem, 1);
-    sema_init(&status_sem, 1);
 
     memhole_major = register_chrdev(0, "memhole", &memhole_fops);
     if(memhole_major < 0){
