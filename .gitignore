@@ -2,3 +2,7 @@ scullbufferFramework
 Module.symvers
 modules.order
 memhole.mod
+wrappers/old
+memdmp
+tester3
+.vscode

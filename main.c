@@ -15,7 +15,7 @@ module_param(memhole_major, int, S_IRUGO);
 module_param(memhole_minor, int, S_IRUGO);
 
 MODULE_AUTHOR("Jacob Rice");
-MODULE_LICENSE("Dual BSD/GPL"); //fake news, ill sue you if you use this without my permission xd
+MODULE_LICENSE("Dual BSD/GPL");
 
 static int memhole_open(struct inode *inode, struct file* filp){
     //printkn("device opened\n");
