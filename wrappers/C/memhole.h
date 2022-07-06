@@ -1,12 +1,31 @@
+#ifndef MEMHOLE_WRAPPER_H
+#define MEMHOLE_WRAPPER_H
 /*
     Wrapper for Memhole
-    wrapper version: 1.4 for Memhole v1.2
+    wrapper v1.5 for Memhole v1.2.x
 
     This header file allows for easy use of memhole in any C/C++ program
 */
 
-#ifndef MEMHOLE_WRAPPER_H
-#define MEMHOLE_WRAPPER_H
+/*
+    To use:
+    create a memhole_t and initialize it to 0
+    call connect_memhole() with a pointer to your memhole_t as the argument 
+    use attach_to_pid() to attach memhole to a process id's memory
+    use set_memory_position() to set the position in memory to read/write from
+    call read_memory() or write_memory() to read/write memory
+    NOTE: write_memory() only works if the macro on line 28 has been uncommented (for safety)
+    NOTE: the modes used in set_memory_position() and read/write_memory() are 
+*/
+
+/*
+   NOTE: writing is disabled by default for safety
+
+   if your version of memhole supports writing and you need to write,
+   you can uncomment the following line to allow writing with memhole
+*/
+//#define MEMHOLEW_ALLOW_WRITE
+
 
 #ifndef _LARGEFILE64_SOURCE
 #define _LARGEFILE64_SOURCE
@@ -16,6 +35,7 @@
 #include <fcntl.h>
 #include <signal.h>
 #include <semaphore.h>
+#include <stdio.h>
 
 // Error codes
 #define EINVDEV 4   // invalid memhole device
@@ -24,14 +44,20 @@
 #define EINVPID 32  // could not find pid
 #define EKMALOC 64  // memhole could not kmalloc
 
-#define LSMSPID 0   // lseek mode set pid
-#define LSMSPOS 1   // lseek mode set pos
-#define LSMGPOS 2   // lseek mode get pos
-#define LSMSBUF 3   // lseek mode set buffer size (uninitialized at start)
-
+// IO operation modes
+//
+// in general:
+// if your program accesses memhole on more than 1 thread, use a safe mode
+// if your program has only 1 thread, SKMFAST will be safe to use
 #define SKMFAST 1   // address seek fast (no semaphore usage, not thread safe)
 #define SKMSAFE 2   // address seek safe (blocks for semaphore, MUST be used with an IO operation with the same type to unlock sem again)
 #define SKMSFNB 4   // address seek safe non-blocking (same as SKMSAFE but will not block for semaphore, instead failing if sem is locked)
+
+// internal memhole modes, DO NOT USE in wrapper function arguments
+#define LSMSPID 0   // lseek mode set pid
+#define LSMSPOS 1   // lseek mode set pos
+#define LSMGPOS 2   // lseek mode get pos
+#define LSMSBUF 3   // lseek mode set buffer size
 
 #define MEMHOLE_PATH "/dev/memhole"
 
@@ -48,7 +74,14 @@ struct __memhole_dev_t{
 inline int connect_memhole(memhole_t* memhole){
     if(memhole == NULL) return -EINVDEV;
     if(access(MEMHOLE_PATH, F_OK)) return -EMEMHNF;
+
+    #ifdef MEMHOLEW_ALLOW_WRITE
     int ret = open(MEMHOLE_PATH, O_RDWR);
+    #endif
+    #ifndef MEMHOLEW_ALLOW_WRITE
+    int ret = open(MEMHOLE_PATH, O_RDONLY);
+    #endif
+
     if(ret < 0){
         return -EMEMBSY;
     }
@@ -129,7 +162,6 @@ inline long set_buffer_size(memhole_t* memhole, long len){
     return 0;
 }
 
-
 // read memory starting at the pos set with set_memory_position()
 // mode should be an SKMxxxx macro, likely equal to the one used in the last set_memory_position() call
 // NOTE: the pos is NOT automatically incremented after a read/write
@@ -146,32 +178,34 @@ inline long read_memory(memhole_t* memhole, char* buf, long len, int mode){
         return -EKMALOC;
     }
     long ret_val = read(memhole->fd, buf, len);
-    if(mode == SKMSAFE || mode == SKMSFNB){
+    if(mode & (SKMSAFE | SKMSFNB)){
         sem_post(&memhole->op_sem);
     }
     return ret_val;
 }
 
+#ifdef MEMHOLEW_ALLOW_WRITE
 // write memory starting at the pos set with set_memory_position()
 // mode should be an SKMxxxx macro, likely equal to the one used in the last set_memory_position() call
 // NOTE: the pos is NOT automatically incremented after a read/write
 // 
-// returns an error code or number of bytes read
+// returns an error code or number of bytes written
 inline long write_memory(memhole_t* memhole, char* buf, long len, int mode){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd <= 0) return -EINVDEV;
     if(!((mode == SKMSAFE) | (mode == SKMFAST) | (mode == SKMSFNB))){
-        printf("invalid mode used in read_memory()\n");
+        printf("invalid mode used in write_memory()\n");
         return -EINVDEV;
     }
     if(set_buffer_size(memhole, len)){
         return -EKMALOC;
     }
     long ret_val = write(memhole->fd, buf, len);
-    if(mode == SKMSAFE || mode == SKMSFNB){
+    if(mode & (SKMSAFE | SKMSFNB)){
         sem_post(&memhole->op_sem);
     }
     return ret_val;
 }
+#endif
 
 #endif
