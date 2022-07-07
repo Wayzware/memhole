@@ -8,6 +8,18 @@
     The memhole kernel module must be loaded for these functions to work properly
 */
 
+/*
+    To use:
+    create a new memhole_t* by calling create_memhole()
+    call connect_memhole() with a pointer to your memhole_t as the argument 
+    use attach_to_pid() to attach memhole to a process id's memory
+    use set_memory_position() to set the position in memory to read/write from
+    call read_memory() or write_memory() to read/write memory
+    when done, delete the memhole_t with delete_memhole()
+    NOTE: write_memory() only works if the macro on line 28 has been uncommented (for safety)
+    NOTE: the modes used in set_memory_position() and read/write_memory() are 
+*/
+
 // NOTE: writing is disabled by default for safety
 //
 // if your version of memhole supports writing and you need to write,
