@@ -2,7 +2,7 @@
 #define MEMHOLE_WRAPPER_H
 /*
     Wrapper for Memhole
-    wrapper v1.6 for Memhole v1.2.x
+    wrapper v1.7 for Memhole v1.3.x
 
     This header file allows for easy use of memhole in any C/C++ program
     The memhole kernel module must be loaded for these functions to work properly
@@ -69,7 +69,8 @@ typedef enum{
 #define LSMSPID 0   // lseek mode set pid
 #define LSMSPOS 1   // lseek mode set pos
 #define LSMGPOS 2   // lseek mode get pos
-#define LSMSBUF 3   // lseek mode set buffer size
+#define LSMSLEN 3   // lseek mode set buff length
+#define LSMGBUF 4   // lseek mode get buffer address
 
 #define MEMHOLE_PATH "/dev/memhole"
 
@@ -92,7 +93,7 @@ inline memhole_t* create_memhole(){
     if(!ret_val) return 0;
     ret_val->fd = 0;
     ret_val->buf_size = 0;
-    ret_val->op_sem = {};
+    ret_val->op_sem = 0;
     return ret_val;
 }
 
@@ -111,7 +112,6 @@ inline int delete_memhole(memhole_t* memhole){
 // 
 // returns an error code or 0 upon success
 inline int connect_memhole(memhole_t* memhole){
-
     #ifdef MEMHOLEW_ALLOW_WRITE
     int mode = O_RDWR;
     #endif
