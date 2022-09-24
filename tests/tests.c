@@ -88,7 +88,7 @@ struct __memhole_dev_t{
 // note: this function does not connect to the memhole device (use connect_memhole() after this function)
 //
 // returns a pointer to a new memhole_t or 0 upon malloc error
-inline memhole_t* create_memhole(){
+ memhole_t* create_memhole(){
     memhole_t* ret_val = (memhole_t*) malloc(sizeof(memhole_t));
     if(!ret_val) return 0;
     ret_val->fd = 0;
@@ -101,7 +101,7 @@ inline memhole_t* create_memhole(){
 // note: this function does not disconnect from the memhole device (use disconnect_memhole() before this function)
 //
 // returns an error code or 0 upon success
-inline int delete_memhole(memhole_t* memhole){
+ int delete_memhole(memhole_t* memhole){
     if(memhole == NULL) return -EINVDEV;
     free(memhole);
     return 0;
@@ -111,7 +111,7 @@ inline int delete_memhole(memhole_t* memhole){
 // note: only 1 connection is allowed at a time
 // 
 // returns an error code or 0 upon success
-inline int connect_memhole(memhole_t* memhole){
+ int connect_memhole(memhole_t* memhole){
     #ifdef MEMHOLEW_ALLOW_WRITE
     int mode = O_RDWR;
     #endif
@@ -139,7 +139,7 @@ inline int connect_memhole(memhole_t* memhole){
 // disconnects a memhole_t from the memhole kernel module
 // 
 // returns an error code or 0 upon success
-inline int disconnect_memhole(memhole_t* memhole){
+ int disconnect_memhole(memhole_t* memhole){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd == 0) return -EINVDEV;
     return close(memhole->fd);
@@ -148,7 +148,7 @@ inline int disconnect_memhole(memhole_t* memhole){
 // attach memhole to pid's memory
 // 
 // returns an error code or 0 upon success
-inline long attach_to_pid(memhole_t* memhole, int pid){
+ long attach_to_pid(memhole_t* memhole, int pid){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd <= 0) return -EINVDEV;
     if(kill(pid, 0)) return -EINVPID;
@@ -166,7 +166,7 @@ inline long attach_to_pid(memhole_t* memhole, int pid){
 // 
 // returns an error code or the memory address seeked to
 // mode SKMSFNB will return -EMEMBSY if the semaphore could not be grabbed
-inline long set_memory_position(memhole_t* memhole, void* pos, memhole_mode_t mode){
+ long set_memory_position(memhole_t* memhole, void* pos, memhole_mode_t mode){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd <= 0) return -EINVDEV;
     if(mode == SKMSAFE){
@@ -187,7 +187,7 @@ inline long set_memory_position(memhole_t* memhole, void* pos, memhole_mode_t mo
 // get the memory position currently used for reading/writing from
 // 
 // returns an error code or the memory address requested
-inline long get_memory_position(memhole_t* memhole){
+ long get_memory_position(memhole_t* memhole){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd <= 0) return -EINVDEV;
 
@@ -198,7 +198,7 @@ inline long get_memory_position(memhole_t* memhole){
 // this is done automatically if a read/write call is made that would exceed the buffer size
 //
 // returns an error code or 0 upon success
-inline long set_buffer_size(memhole_t* memhole, long len){
+ long set_buffer_size(memhole_t* memhole, long len){
     if(len > memhole->buf_size){
         if(lseek64(memhole->fd, len, LSMSLEN)){
             return -EKMALOC;
@@ -210,7 +210,7 @@ inline long set_buffer_size(memhole_t* memhole, long len){
 // get the address of the memhole shared user/kernel buffer
 //
 // returns the address of the buffer or 0 if it has not yet been created
-inline long get_buffer_addr(memhole_t* memhole){
+ long get_buffer_addr(memhole_t* memhole){
     return lseek64(memhole->fd, 0, LSMGBUF);
 }
 
@@ -219,7 +219,7 @@ inline long get_buffer_addr(memhole_t* memhole){
 // NOTE: the pos is NOT automatically incremented after a read/write
 // 
 // returns an error code or number of bytes read
-inline long read_memory(memhole_t* memhole, char* buf, long len, memhole_mode_t mode){
+ long read_memory(memhole_t* memhole, char* buf, long len, memhole_mode_t mode){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd <= 0) return -EINVDEV;
     if(!((mode == SKMSAFE) | (mode == SKMFAST) | (mode == SKMSFNB))){
@@ -242,7 +242,7 @@ inline long read_memory(memhole_t* memhole, char* buf, long len, memhole_mode_t 
 // NOTE: the pos is NOT automatically incremented after a read/write
 // 
 // returns an error code or number of bytes written
-inline long write_memory(memhole_t* memhole, char* buf, long len, memhole_mode_t mode){
+ long write_memory(memhole_t* memhole, char* buf, long len, memhole_mode_t mode){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd <= 0) return -EINVDEV;
     if(!((mode == SKMSAFE) | (mode == SKMFAST) | (mode == SKMSFNB))){
@@ -261,3 +261,22 @@ inline long write_memory(memhole_t* memhole, char* buf, long len, memhole_mode_t
 #endif
 
 #endif
+
+
+int main(int argc, char** argv) {
+    memhole_t* memhole = create_memhole();
+    printf("connect: %d\n", connect_memhole(memhole));
+    printf("attach to pid: %ld\n", attach_to_pid(memhole, atoi(argv[1])));
+    printf("set mem: %p\n", (void*)set_memory_position(memhole, (void*) atol(argv[2]), SKMFAST));
+    printf("buffer size: %ld\n", set_buffer_size(memhole, atol(argv[3])));
+    void* buffer = (void*) get_buffer_addr(memhole);
+    printf("buffer addr: %p\n", buffer);
+    printf("%ld\n", read_memory(memhole, buffer, atol(argv[3]), SKMFAST));
+    for(int i = 0; i < atol(argv[3]); i++) {
+        printf("%c", ((char*) buffer)[i]);
+    }
+    printf("\n");
+    printf("disconnect: %d\n", disconnect_memhole(memhole));
+    delete_memhole(memhole);
+    return 0;
+}

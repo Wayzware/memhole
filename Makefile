@@ -25,6 +25,14 @@ PWD       := $(shell pwd)
 
 all: modules
 
+redo: clean all uninstall install
+
+install:
+	sudo ./memhole_load
+
+uninstall:
+	sudo ./memhole_unload
+
 modules:
 	$(MAKE) -C $(KERNELDIR) M=$(PWD) LDDINC=$(PWD)/../include modules
 endif
@@ -34,7 +42,7 @@ clean:
 
 
 depend .depend dep:
-	$(CC) $(CFLAGS) -M *.c > .depend
+	gcc-12 $(CFLAGS) -M *.c > .depend
 
 ifeq (.depend,$(wildcard .depend))
 include .depend

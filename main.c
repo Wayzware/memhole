@@ -52,12 +52,16 @@ static loff_t memhole_llseek(struct file* filp, loff_t addr, int m){
         //printk(KERN_NOTICE "MEMHOLE: seeking to: %p\n", address);
         return (loff_t) address;
     }
-    else if(m == LSMSBUF){
+    else if(m == LSMSLEN){
         if(buffer){
             vfree(buffer);
         }
         buffer = vmalloc_huge((long) addr, GFP_USER);
+        printk(KERN_NOTICE "MEMHOLE: allocating %ld bytes at %p", (long) addr, buffer);
         return !buffer;
+    }
+    else if(m == LSMGBUF){
+        return (loff_t) buffer;
     }
 
     printkw("tried to seek using an invalid mode");
