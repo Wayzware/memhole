@@ -7,6 +7,7 @@
 
 #include <linux/kernel.h>	/* printk() */
 #include <linux/slab.h>		/* kmalloc() */
+#include <linux/vmalloc.h>    /* vmalloc() */
 #include <linux/fs.h>		/* everything... */
 #include <linux/errno.h>	/* error codes */
 #include <linux/proc_fs.h>
@@ -24,7 +25,9 @@
 
 #include <asm/smap.h>
 
-#define MEMHOLE_VERSION "1.2.2-Full"
+#define MEMHOLE_VERSION "1.3.0-Full"
+
+//#define MEMHOLE_DEBUG
 
 #define LSMSPID 0
 #define LSMSPOS 1

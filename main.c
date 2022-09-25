@@ -18,7 +18,9 @@ MODULE_AUTHOR("Jacob Rice");
 MODULE_LICENSE("Dual BSD/GPL");
 
 static int memhole_open(struct inode *inode, struct file* filp){
-    //printkn("device opened\n");
+    #ifdef MEMHOLE_DEBUG
+    printkn("device opened\n");
+    #endif
     if(down_trylock(&dev_sem)){
         return 1;
     }
@@ -26,20 +28,19 @@ static int memhole_open(struct inode *inode, struct file* filp){
 }
 
 static int memhole_close(struct inode* inode, struct file* filp){
-    //printkn("device closed\n");
-    if(buffer) kfree(buffer);
+    #ifdef MEMHOLE_DEBUG
+    printkn("device closed\n");
+    #endif
+    if(buffer) vfree(buffer);
     buffer = NULL;
     up(&dev_sem);
     return 0;
 }
 
 static loff_t memhole_llseek(struct file* filp, loff_t addr, int m){
-
     if(m == LSMSPID){ //set the PID and load the data into kernel memory
-        //proc_task = find_task_by_vpid((int) addr);
         proc_task = pid_task(find_vpid((int) addr), PIDTYPE_PID);
         if(proc_task == NULL){
-            printkw("could not find pid");
             return 0;
         }
         return proc_task->mm->start_brk;
@@ -49,25 +50,30 @@ static loff_t memhole_llseek(struct file* filp, loff_t addr, int m){
     }
     else if(m == LSMSPOS){
         address = (char*) addr;
-        //printk(KERN_NOTICE "MEMHOLE: seeking to: %p\n", address);
+        #ifdef MEMHOLE_DEBUG
+        printk(KERN_NOTICE "MEMHOLE: seeking to: %p\n", address);
+        #endif
         return (loff_t) address;
     }
     else if(m == LSMSBUF){
         if(buffer){
-            kfree(buffer);
+            vfree(buffer);
         }
-        buffer = kmalloc((long) addr, GFP_KERNEL);
+        buffer = vmalloc((size_t) addr);
         return !buffer;
     }
-
+    #ifdef MEMHOLE_DEBUG
     printkw("tried to seek using an invalid mode");
+    #endif
     return -1;
 
 }
 
 static ssize_t memhole_read(struct file* filp, char __user *buf, size_t len, loff_t *f_pos){
     int bytes;
-    //printk(KERN_NOTICE "MEMHOLE: reading %ld bytes from %p to %p\n", len, address, buf);
+    #ifdef MEMHOLE_DEBUG
+    printk(KERN_NOTICE "MEMHOLE: reading %ld bytes from %p to %p\n", len, address, buf);
+    #endif
     if(!buf || !buffer) return -1;
     bytes = access_process_vm(proc_task, (unsigned long) address, (void*) buffer, len, 0);
     if(copy_to_user(buf, buffer, bytes)){
@@ -78,7 +84,9 @@ static ssize_t memhole_read(struct file* filp, char __user *buf, size_t len, lof
 
 static ssize_t memhole_write(struct file* filp, const char __user *buf, size_t len, loff_t *f_pos){
     int bytes;
-    //printk( KERN_NOTICE "MEMHOLE: writing %ld bytes from %p to %p\n", len, buf, address);
+    #ifdef MEMHOLE_DEBUG
+    printk( KERN_NOTICE "MEMHOLE: writing %ld bytes from %p to %p\n", len, buf, address);
+    #endif
     if(!buf || !buffer) return -1;
     if(copy_from_user(buffer, buf, len)){
         return -1;
