@@ -2,7 +2,7 @@
 #define MEMHOLE_WRAPPER_H
 /*
     Wrapper for Memhole
-    wrapper v1.6 for Memhole v1.2.x
+    wrapper v1.6 for Memhole v1.2.x and v1.3.x
 
     This header file allows for easy use of memhole in any C/C++ program
     The memhole kernel module must be loaded for these functions to work properly
