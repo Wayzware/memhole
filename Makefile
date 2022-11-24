@@ -36,7 +36,7 @@ tclean:
 	rm -f tests/test tests/*.out
 
 tests:
-	cd tests; g++ -o test tests.cpp; cd ..
+	cd tests; make; cd ..
 
 install:
 	sudo ./memhole_load.sh

@@ -1,3 +1,5 @@
+Note: this license does not apply to files in ./wrappers
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
