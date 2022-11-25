@@ -45,8 +45,9 @@ Regardless of wrapper used, in general, `memhole` is operated by:
     * Under the hood, for a read, memory is transfered from target program -> kernel buffer -> program harnessing `memhole`. For writes, the process is reversed.
 
 ## Limitations
-Currently, there are not known limitations on `memhole`. In versions prior to 1.3 (i.e. <= v1.2.x), `memhole` was limited to a buffer size equivalent to the system's page size (likely 4 KB). In version 1.3, the `kmalloc()` was exchanged for a `vmalloc()`, increasing the read/write limits to the amount of RAM available to the system.
-* This is because `kmalloc()` allocates physical memory and cannot allocate more than a single page. `vmalloc()` allocates virtual memory and does not have this limitation.
+`memhole` can only have 1 active connection at a time, meaning there can only be 1 handle on the memhole device (`/dev/memhole`) active at a time. Using the C wrapper, it is possible to make calls to `memhole` from multiple threads using the safe seekmode argument (of type `memhole_mode_t`, found in [the C wrapper](wrappers/C/memhole.h)), but the system simply institutes a queue, meaning true multithreading or parallel actions are not currently supported with `memhole`.
+
+In versions prior to 1.3 (i.e. <= v1.2.x), `memhole` was limited to a buffer size equivalent to the system's page size (likely 4 KB). In version 1.3, the `kmalloc()` was exchanged for a `vmalloc()`, increasing the read/write limits to the amount of RAM available to the system.
 
 ## Feedback and Contributing
 Memhole's git repo can be found [here](https://github.com/Wayzware/memhole).
