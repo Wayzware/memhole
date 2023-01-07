@@ -30,7 +30,7 @@ If you get an error similar to:
 
 you need to disable Secure Boot in your motherboard's BIOS in order for the installation process to succeed, as `memhole` is not signed.
 
-## Utilization & Developer's Guild
+## Utilization & Developer's Guide
 The best way to interact with `memhole` is through the C wrapper located in [./wrappers](./wrappers), or the [Python wrapper](https://github.com/Wayzware/memhole-python/tree/master/memhole) (which itself is a wrapper on the C wrapper). Specific documentation and function names can be found in the well-documented source code for the wrappers.
 
 Regardless of wrapper used, in general, `memhole` is operated by:
