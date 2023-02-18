@@ -172,7 +172,7 @@ inline long memhole_attach_to_pid(memhole_t* memhole, int pid){
 inline long memhole_attach_secondary_pid(memhole_t* memhole, int pid){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd <= 0) return -EINVDEV;
-    if(kill(pid, 0)) return -EINVPID;
+    if(pid != 0 && kill(pid, 0)) return -EINVPID;
 
     long ret = lseek64(memhole->fd, pid, LSMSOPI);
     if(ret == 0 && pid != 0){
@@ -185,6 +185,7 @@ inline long memhole_attach_secondary_pid(memhole_t* memhole, int pid){
 }
 
 // attach memhole to 2 processes' memory for other process -> other process operations
+// set pid2 to 0 to exit other process -> other process mode
 //
 // returns an error code or 0 upon success
 inline long memhole_attach_to_pids(memhole_t* memhole, int pid1, int pid2){
@@ -196,9 +197,9 @@ inline long memhole_attach_to_pids(memhole_t* memhole, int pid1, int pid2){
     if(ret == 0){
         return -EINVPID;
     }
-    if(kill(pid2, 0)) return -EINVPID;
+    if(pid2 != 0 && kill(pid2, 0)) return -EINVPID;
     ret = lseek64(memhole->fd, pid2, LSMSOPI);
-    if(ret == 0){
+    if(ret == 0 && pid2 != 0){
         return -EINVPID;
     }
     return 0;
