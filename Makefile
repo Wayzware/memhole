@@ -1,9 +1,9 @@
 # Comment/uncomment the following line to disable/enable debugging
- DEBUG = y
+DEBUG = y
 
 # Add your debugging flag (or not) to CFLAGS
 ifeq ($(DEBUG),y)
-  DEBFLAGS = -O -g -DSCULL_DEBUG # "-O" is needed to expand inlines
+  DEBFLAGS = -O -g -DMEMHOLE_DEBUG # "-O" is needed to expand inlines
 else
   DEBFLAGS = -O2
 endif
@@ -30,7 +30,7 @@ modules:
 endif
 
 clean:
-	rm -rf *.o *~ core .depend .*.cmd *.ko *.mod.c .tmp_versions
+	rm -rf *.o *~ core .depend .*.cmd *.ko *.mod.c .tmp_versions *.mod *.symvers *.order .*.o.d
 
 tclean:
 	rm -f tests/test tests/*.out

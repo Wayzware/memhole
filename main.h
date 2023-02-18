@@ -25,7 +25,7 @@
 
 #include <asm/smap.h>
 
-#define MEMHOLE_VERSION "1.3.0-Full"
+#define MEMHOLE_VERSION "1.4.0-pre-release-1"
 
 //#define MEMHOLE_DEBUG
 

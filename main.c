@@ -1,4 +1,4 @@
-#include "memhole.h"
+#include "main.h"
 
 int memhole_major = 0;
 int memhole_minor = 0;
