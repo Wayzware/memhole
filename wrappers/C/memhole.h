@@ -2,29 +2,30 @@
 #define MEMHOLE_WRAPPER_H
 /*
     Wrapper for Memhole
-    wrapper v1.6 for Memhole v1.2.x and v1.3.x
+    wrapper v1.7 for Memhole v1.2.x and v1.3.x
 
     This header file allows for easy use of memhole in any C/C++ program
     The memhole kernel module must be loaded for these functions to work properly
 */
 
 /*
-    To use:
-    create a new memhole_t* by calling create_memhole()
-    call connect_memhole() with a pointer to your memhole_t as the argument 
-    use attach_to_pid() to attach memhole to a process id's memory
-    use set_memory_position() to set the position in memory to read/write from
-    call read_memory() or write_memory() to read/write memory
-    when done, delete the memhole_t with delete_memhole()
-    NOTE: write_memory() only works if the macro on line 28 has been uncommented (for safety)
-    NOTE: the modes used in set_memory_position() and read/write_memory() are 
+    To use in other process -> process operating memhole mode:
+        1. create a new memhole_t* by calling memhole_create()
+        2. call memhole_connect() with a pointer to your memhole_t as the argument 
+        3. use memhole_attach_to_pid() to attach memhole to a process id's memory
+        4. use memhole_set_mem_pos() to set the position in memory to read/write from
+        5. call memhole_read() or memhole_write() to read/write memory
+        6. when done, call memhole_disconnect() and delete the memhole_t with delete_memhole()
+    
+    To use in other process -> other process mode:
+        1. create a new memhole_t* by calling memhole_create()
+        2. call memhole_connect() with a pointer to your memhole_t as the argument
+        3. use memhole_attach_to_pids() to attach memhole to the 2 processes
+        4. use memhole_set_mem_pos() to set the position in pid1's memory to read/write from
+        5. call memhole_read() or memhole_write() to read/write memory
+            - the "buf" argument should be a memory address in pid2's memory
+        6. when done, call memhole_disconnect() and delete the memhole_t with delete_memhole()
 */
-
-// NOTE: writing is disabled by default for safety
-//
-// if your version of memhole supports writing and you need to write,
-// you can uncomment this line to allow writing with memhole
-//#define MEMHOLEW_ALLOW_WRITE
 
 // if for some reason you want memhole to be open after an exec() family call,
 // comment out the line below
@@ -42,17 +43,17 @@
 #include <stdlib.h>
 
 // Error codes
-#define EINVDEV 4   // invalid memhole device
+#define EINVDEV 4   // invalid memhole device (memhole_t* == NULL or not connected to memhole)
 #define EMEMHNF 8   // memhole device not found (/dev/memhole)
 #define EMEMBSY 16  // memhole device is in use (busy)
 #define EINVPID 32  // could not find pid
-#define EKMALOC 64  // memhole could not kmalloc
+#define EKMALOC 64  // memhole could not kmalloc (out of memory)
+#define EUSPOPN 128 // unsupported operation (old memhole version)
 
 // internal IO operation definitions (use memhole_mode_t for mode arguments)
 #define _SKMFAST 1
 #define _SKMSAFE 2
 #define _SKMSFNB 4
-
 
 // IO operation modes
 //
@@ -70,6 +71,7 @@ typedef enum{
 #define LSMSPOS 1   // lseek mode set pos
 #define LSMGPOS 2   // lseek mode get pos
 #define LSMSBUF 3   // lseek mode set buffer size
+#define LSMSOPI 4   // lseek mode set other pid
 
 #define MEMHOLE_PATH "/dev/memhole"
 
@@ -87,7 +89,7 @@ struct __memhole_dev_t{
 // note: this function does not connect to the memhole device (use connect_memhole() after this function)
 //
 // returns a pointer to a new memhole_t or 0 upon malloc error
-inline memhole_t* create_memhole(){
+inline memhole_t* memhole_create(){
     memhole_t* ret_val = (memhole_t*) malloc(sizeof(memhole_t));
     if(!ret_val) return 0;
     ret_val->fd = 0;
@@ -100,7 +102,7 @@ inline memhole_t* create_memhole(){
 // note: this function does not disconnect from the memhole device (use disconnect_memhole() before this function)
 //
 // returns an error code or 0 upon success
-inline int delete_memhole(memhole_t* memhole){
+inline int memhole_delete(memhole_t* memhole){
     if(memhole == NULL) return -EINVDEV;
     free(memhole);
     return 0;
@@ -110,7 +112,7 @@ inline int delete_memhole(memhole_t* memhole){
 // note: only 1 connection is allowed at a time
 // 
 // returns an error code or 0 upon success
-inline int connect_memhole(memhole_t* memhole){
+inline int memhole_connect(memhole_t* memhole){
 
     #ifdef MEMHOLEW_ALLOW_WRITE
     int mode = O_RDWR;
@@ -139,7 +141,7 @@ inline int connect_memhole(memhole_t* memhole){
 // disconnects a memhole_t from the memhole kernel module
 // 
 // returns an error code or 0 upon success
-inline int disconnect_memhole(memhole_t* memhole){
+inline int memhole_disconnect(memhole_t* memhole){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd == 0) return -EINVDEV;
     return close(memhole->fd);
@@ -148,12 +150,54 @@ inline int disconnect_memhole(memhole_t* memhole){
 // attach memhole to pid's memory
 // 
 // returns an error code or 0 upon success
-inline long attach_to_pid(memhole_t* memhole, int pid){
+inline long memhole_attach_to_pid(memhole_t* memhole, int pid){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd <= 0) return -EINVDEV;
     if(kill(pid, 0)) return -EINVPID;
 
     long ret = lseek64(memhole->fd, pid, LSMSPID);
+    if(ret == 0){
+        return -EINVPID;
+    }
+    else if(ret == -1){
+        return -EUSPOPN;
+    }
+    return 0;
+}
+
+// set the secondary PID for direct other process -> other process memory operations
+// set PID to 0 to exit other process -> other process mode
+//
+// returns an error code or 0 upon success
+inline long memhole_attach_secondary_pid(memhole_t* memhole, int pid){
+    if(memhole == NULL) return -EINVDEV;
+    if(memhole->fd <= 0) return -EINVDEV;
+    if(kill(pid, 0)) return -EINVPID;
+
+    long ret = lseek64(memhole->fd, pid, LSMSOPI);
+    if(ret == 0 && pid != 0){
+        return -EINVPID;
+    }
+    else if(ret == -1){
+        return -EUSPOPN;
+    }
+    return 0;
+}
+
+// attach memhole to 2 processes' memory for other process -> other process operations
+//
+// returns an error code or 0 upon success
+inline long memhole_attach_to_pids(memhole_t* memhole, int pid1, int pid2){
+    if(memhole == NULL) return -EINVDEV;
+    if(memhole->fd <= 0) return -EINVDEV;
+    if(kill(pid1, 0)) return -EINVPID;
+
+    long ret = lseek64(memhole->fd, pid1, LSMSPID);
+    if(ret == 0){
+        return -EINVPID;
+    }
+    if(kill(pid2, 0)) return -EINVPID;
+    ret = lseek64(memhole->fd, pid2, LSMSOPI);
     if(ret == 0){
         return -EINVPID;
     }
@@ -166,7 +210,7 @@ inline long attach_to_pid(memhole_t* memhole, int pid){
 // 
 // returns an error code or the memory address seeked to
 // mode SKMSFNB will return -EMEMBSY if the semaphore could not be grabbed
-inline long set_memory_position(memhole_t* memhole, void* pos, memhole_mode_t mode){
+inline long memhole_set_mem_pos(memhole_t* memhole, void* pos, memhole_mode_t mode){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd <= 0) return -EINVDEV;
     if(mode == SKMSAFE){
@@ -187,7 +231,7 @@ inline long set_memory_position(memhole_t* memhole, void* pos, memhole_mode_t mo
 // get the memory position currently used for reading/writing from
 // 
 // returns an error code or the memory address requested
-inline long get_memory_position(memhole_t* memhole){
+inline long memhole_get_mem_pos(memhole_t* memhole){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd <= 0) return -EINVDEV;
 
@@ -198,7 +242,7 @@ inline long get_memory_position(memhole_t* memhole){
 // this is done automatically if a read/write call is made that would exceed the buffer size
 //
 // returns an error code or 0 upon success
-inline long set_buffer_size(memhole_t* memhole, long len){
+inline long memhole_set_buffer_size(memhole_t* memhole, long len){
     if(len > memhole->buf_size){
         if(lseek64(memhole->fd, len, LSMSBUF)){
             return -EKMALOC;
@@ -208,18 +252,21 @@ inline long set_buffer_size(memhole_t* memhole, long len){
 }
 
 // read memory starting at the pos set with set_memory_position()
+// buf should be the address to read memory to
+//    In other process -> other process mode, this will be the memory address written to in the secondary process
+//    In normal mode, this should be to an appropriately sized buffer
 // mode should be a memhole_mode_t enum, likely equal to the one used in the last set_memory_position() call
 // NOTE: the pos is NOT automatically incremented after a read/write
 // 
 // returns an error code or number of bytes read
-inline long read_memory(memhole_t* memhole, char* buf, long len, memhole_mode_t mode){
+inline long memhole_read(memhole_t* memhole, char* buf, long len, memhole_mode_t mode){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd <= 0) return -EINVDEV;
     if(!((mode == SKMSAFE) | (mode == SKMFAST) | (mode == SKMSFNB))){
         printf("invalid mode used in read_memory()\n");
         return -EINVDEV;
     }
-    if(set_buffer_size(memhole, len)){
+    if(memhole_set_buffer_size(memhole, len)){
         return -EKMALOC;
     }
     long ret_val = read(memhole->fd, buf, len);
@@ -229,20 +276,22 @@ inline long read_memory(memhole_t* memhole, char* buf, long len, memhole_mode_t 
     return ret_val;
 }
 
-#ifdef MEMHOLEW_ALLOW_WRITE
 // write memory starting at the pos set with set_memory_position()
+// buf should be the address of the data to be written
+//    In other process -> other process mode, this will be the starting memory address read from in the secondary process
+//    In normal mode, this should point to a buffer with the desired data to be written
 // mode should be a memhole_mode_t enum, likely equal to the one used in the last set_memory_position() call
 // NOTE: the pos is NOT automatically incremented after a read/write
 // 
 // returns an error code or number of bytes written
-inline long write_memory(memhole_t* memhole, char* buf, long len, memhole_mode_t mode){
+inline long memhole_write(memhole_t* memhole, char* buf, long len, memhole_mode_t mode){
     if(memhole == NULL) return -EINVDEV;
     if(memhole->fd <= 0) return -EINVDEV;
     if(!((mode == SKMSAFE) | (mode == SKMFAST) | (mode == SKMSFNB))){
         printf("invalid mode used in write_memory()\n");
         return -EINVDEV;
     }
-    if(set_buffer_size(memhole, len)){
+    if(memhole_set_buffer_size(memhole, len)){
         return -EKMALOC;
     }
     long ret_val = write(memhole->fd, buf, len);
@@ -251,6 +300,5 @@ inline long write_memory(memhole_t* memhole, char* buf, long len, memhole_mode_t
     }
     return ret_val;
 }
-#endif
 
 #endif

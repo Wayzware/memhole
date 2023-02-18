@@ -8,6 +8,7 @@ char* address = 0;
 struct semaphore dev_sem = {};
 
 struct task_struct* proc_task = NULL;
+struct task_struct* proc_task_secondary = NULL;
 
 char* buffer = NULL;
 
@@ -62,6 +63,19 @@ static loff_t memhole_llseek(struct file* filp, loff_t addr, int m){
         buffer = vmalloc((size_t) addr);
         return !buffer;
     }
+    else if(m == LSMSOPI){
+        if(addr == 0){
+            proc_task_secondary = NULL;
+            return 0;
+        }
+        else{
+            proc_task_secondary = pid_task(find_vpid((int) addr), PIDTYPE_PID);
+            if(proc_task_secondary == NULL){
+                return 0;
+            }
+            return proc_task_secondary->mm->start_brk;
+        }
+    }
     #ifdef MEMHOLE_DEBUG
     printkw("tried to seek using an invalid mode");
     #endif
@@ -76,8 +90,15 @@ static ssize_t memhole_read(struct file* filp, char __user *buf, size_t len, lof
     #endif
     if(!buf || !buffer) return -1;
     bytes = access_process_vm(proc_task, (unsigned long) address, (void*) buffer, len, 0);
-    if(copy_to_user(buf, buffer, bytes)){
-        return -1;
+    if(proc_task_secondary == NULL){
+        if(copy_to_user(buf, buffer, bytes)){
+            return -1;
+        }
+    }
+    else{
+        if(access_process_vm(proc_task_secondary, (unsigned long) buf, (void*) buffer, bytes, FOLL_WRITE) != bytes){
+            return -2;
+        }
     }
     return bytes;
 }
@@ -88,8 +109,15 @@ static ssize_t memhole_write(struct file* filp, const char __user *buf, size_t l
     printk( KERN_NOTICE "MEMHOLE: writing %ld bytes from %p to %p\n", len, buf, address);
     #endif
     if(!buf || !buffer) return -1;
-    if(copy_from_user(buffer, buf, len)){
-        return -1;
+    if(proc_task_secondary == NULL){
+        if(copy_from_user(buffer, buf, len)){
+            return -1;
+        }
+    }
+    else{
+        if(access_process_vm(proc_task_secondary, (unsigned long) buf, (void*) buffer, len, 0) != len){
+            return -2;
+        }
     }
     bytes = access_process_vm(proc_task, (unsigned long) address, (void*) buffer, len, FOLL_WRITE);
     return bytes;

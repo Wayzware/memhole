@@ -1,5 +1,5 @@
 # Comment/uncomment the following line to disable/enable debugging
-DEBUG = y
+DEBUG = n
 
 # Add your debugging flag (or not) to CFLAGS
 ifeq ($(DEBUG),y)
