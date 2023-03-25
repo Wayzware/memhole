@@ -20,7 +20,7 @@ MODULE_LICENSE("GPL");
 
 static int memhole_open(struct inode *inode, struct file* filp){
     #ifdef MEMHOLE_DEBUG
-    printkn("device opened\n");
+    printkn("MEMHOLE: device opened\n");
     #endif
     if(down_trylock(&dev_sem)){
         return 1;
@@ -30,7 +30,7 @@ static int memhole_open(struct inode *inode, struct file* filp){
 
 static int memhole_close(struct inode* inode, struct file* filp){
     #ifdef MEMHOLE_DEBUG
-    printkn("device closed\n");
+    printkn("MEMHOLE: device closed\n");
     #endif
     if(buffer) vfree(buffer);
     buffer = NULL;
@@ -77,7 +77,7 @@ static loff_t memhole_llseek(struct file* filp, loff_t addr, int m){
         }
     }
     #ifdef MEMHOLE_DEBUG
-    printkw("tried to seek using an invalid mode");
+    printkw("MEMHOLE: tried to seek using an invalid mode");
     #endif
     return -1;
 
