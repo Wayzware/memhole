@@ -41,6 +41,7 @@
 #include <semaphore.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 // Error codes
 #define EINVDEV 4   // invalid memhole device (memhole_t* == NULL or not connected to memhole)
@@ -94,7 +95,7 @@ inline memhole_t* memhole_create(){
     if(!ret_val) return 0;
     ret_val->fd = 0;
     ret_val->buf_size = 0;
-    ret_val->op_sem = {};
+    memset(&ret_val->op_sem, 0, sizeof(sem_t));
     return ret_val;
 }
 
